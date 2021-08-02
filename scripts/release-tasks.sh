@@ -19,7 +19,7 @@ else
 #  /app/vendor/bin/drush state:set cua_cloudinary.cloudinary_url ${CL_URL} --input-format=string
 
   echo "Clearing cache..."
-  /app/vendor/bin/drush cr
+#  /app/vendor/bin/drush cr
 
   echo "Triggering test run...at https://digital-dash-stage-adv-cu.herokuapp.com/api/review-apps/${HEROKU_APP_NAME}/${HEROKU_BRANCH}"
 #  curl https://digital-dash-stage-adv-cu.herokuapp.com/api/review-apps/${HEROKU_APP_NAME}/${HEROKU_BRANCH}
@@ -30,9 +30,9 @@ fi
   cp /app/scripts/templates/.htaccess /app/web/sites/default/files
 
   echo "Importing any config changes..."
-  /app/vendor/bin/drush cim -y
+#  /app/vendor/bin/drush cim -y
 
   echo "Clearing cache..."
-  /app/vendor/bin/drush cr
+#  /app/vendor/bin/drush cr
 
 
