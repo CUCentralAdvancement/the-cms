@@ -1,0 +1,21 @@
+uuid: 70f07e6a-9850-443b-a641-dace88e1b67d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_path
+    - node.type.faq
+id: node.faq.field_path
+field_name: field_path
+entity_type: node
+bundle: faq
+label: Path
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '[node:title]'
+default_value_callback: ''
+settings: {  }
+field_type: string

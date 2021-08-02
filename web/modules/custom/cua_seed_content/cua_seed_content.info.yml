@@ -1,0 +1,6 @@
+name: Seed Content
+type: module
+description: The description.
+package: Advancement - CU-SYS
+core: 8.x
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,23 @@
+uuid: 95107291-9a41-4508-bab8-50882dc7e908
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_fund
+    - node.type.fund
+id: node.fund.field_featured_fund
+field_name: field_featured_fund
+entity_type: node
+bundle: fund
+label: 'Featured Fund'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

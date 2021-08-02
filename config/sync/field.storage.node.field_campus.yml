@@ -1,0 +1,36 @@
+uuid: 82f37fc2-aff8-4d72-a7d4-f09407521c15
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_campus
+field_name: field_campus
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Anschutz
+      label: Anschutz
+    -
+      value: Boulder
+      label: Boulder
+    -
+      value: Denver
+      label: Denver
+    -
+      value: System
+      label: System
+    -
+      value: UCCS
+      label: UCCS
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

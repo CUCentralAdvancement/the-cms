@@ -1,0 +1,6 @@
+name: CUA Cloudinary
+type: module
+description: new cloudinary
+package: Advancement - CU-SYS
+core: 8.x
+core_version_requirement: ^8 || ^9

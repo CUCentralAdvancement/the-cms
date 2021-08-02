@@ -1,0 +1,23 @@
+uuid: c2d286fb-3732-4e1c-8332-56b8ab9e6500
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_suggested_amount
+    - node.type.fund
+id: node.fund.field_suggested_amount
+field_name: field_suggested_amount
+entity_type: node
+bundle: fund
+label: 'Suggested Amount'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 1
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,22 @@
+uuid: 51dc98b5-ec93-4da4-b412-8e7f8f3a3e52
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: faqs_paths
+label: 'FAQs Paths'
+type: 'canonical_entities:node'
+pattern: 'faqs/[node:title]'
+selection_criteria:
+  1ae515c6-9178-4451-92aa-10e3fc5c5e90:
+    id: node_type
+    bundles:
+      faq: faq
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1ae515c6-9178-4451-92aa-10e3fc5c5e90
+selection_logic: and
+weight: -5
+relationships: {  }

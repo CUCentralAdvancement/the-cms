@@ -1,0 +1,21 @@
+uuid: 406f6f4c-1f7e-4df7-98bc-fc2b40884e44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_campus
+    - node.type.fund
+  module:
+    - options
+id: node.fund.field_campus
+field_name: field_campus
+entity_type: node
+bundle: fund
+label: Campus
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

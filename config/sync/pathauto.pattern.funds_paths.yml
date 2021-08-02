@@ -1,0 +1,22 @@
+uuid: 50f6d784-62a8-4df0-a53b-e4072a804e7c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: funds_paths
+label: 'Funds Paths'
+type: 'canonical_entities:node'
+pattern: 'funds/[node:title]'
+selection_criteria:
+  fa76f24f-84aa-4346-8ee6-8a7cafec0543:
+    id: node_type
+    bundles:
+      fund: fund
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fa76f24f-84aa-4346-8ee6-8a7cafec0543
+selection_logic: and
+weight: -5
+relationships: {  }

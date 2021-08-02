@@ -1,0 +1,21 @@
+uuid: f7c732c1-fd7d-4e95-8251-cc9195e4ccb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_marketing_content
+    - node.type.fund
+  module:
+    - text
+id: node.fund.field_marketing_content
+field_name: field_marketing_content
+entity_type: node
+bundle: fund
+label: 'Marketing Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

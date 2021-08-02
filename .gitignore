@@ -1,0 +1,48 @@
+
+# Composer
+vendor
+
+# OS files
+*.idea
+*.DS_Store
+
+# Drupal scaffold
+web/core
+web/modules/contrib
+web/modules/README.txt
+web/profiles
+web/sites/default/files
+web/sites/default/default.services.yml
+web/sites/default/default.settings.php
+web/sites/README.txt
+web/themes/contrib
+web/.csslintrc
+web/.eslintignore
+web/.eslintrc.json
+web/.ht.router.php
+# web/.htaccess
+web/INSTALL.txt
+web/README.txt
+web/autoload.php
+web/example.gitignore
+web/index.php
+web/robots.txt
+web/sites/development.services.yml
+web/sites/example.settings.local.php
+web/sites/default/settings.local.php
+web/sites/example.sites.php
+web/update.php
+web/web.config
+
+# Lando env vars.
+.env
+
+# npm
+node_modules
+
+# Cypress
+cypress/videos
+cypress/screenshots
+
+# Weird SAML module on composer install
+modules/sqlauth

@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for CUA Cloudinary module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\file\Entity\File;
+
+/**
+ * Implements hook_form_alter().
+ */
+function cua_cloudinary_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (in_array($form_id, ['node_story_edit_form', 'node_story_form'])) {
+    $form["field_story_image_card"]["widget"][0]["#upload_validators"]['cua_cloudinary_validate_name'] = [];
+    $form["field_story_image_main"]["widget"][0]["#upload_validators"]['cua_cloudinary_validate_name'] = [];
+  }
+
+  if ($form_id === 'editor_image_dialog') {
+    $form["fid"]["#upload_validators"]['cua_cloudinary_validate_name'] = [];
+  }
+}
+
+/**
+ * Adds timestamp to beginning of file name so no file can have same name.
+ *
+ * @param \Drupal\file\Entity\File $file
+ *   The file entity being validated.
+ */
+function cua_cloudinary_validate_name(File $file): void {
+  $name = $file->getFilename();
+  $new_name = time() . '-' . $name;
+  $file->setFilename($new_name);
+  $file->destination = str_replace($name, $new_name, $file->destination);
+}

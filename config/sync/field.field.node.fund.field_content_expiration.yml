@@ -1,0 +1,21 @@
+uuid: f08cfbfd-181c-4bbe-8d0b-41c0207314d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_expiration
+    - node.type.fund
+  module:
+    - datetime
+id: node.fund.field_content_expiration
+field_name: field_content_expiration
+entity_type: node
+bundle: fund
+label: 'Content Expiration'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

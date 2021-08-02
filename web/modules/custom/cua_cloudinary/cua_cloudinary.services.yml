@@ -1,0 +1,5 @@
+services:
+  cua_cloudinary.stream_wrapper:
+    class: Drupal\cua_cloudinary\StreamWrapper\CloudyStreamWrapper
+    tags:
+      - { name: stream_wrapper, scheme: cloudinary }

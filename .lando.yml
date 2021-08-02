@@ -1,0 +1,37 @@
+name: the-cms
+recipe: drupal9
+config:
+  webroot: web
+  php: 7.4
+  xdebug: true
+  composer_version: 2
+  via: apache
+  database: postgres
+services:
+#  appserver:
+#    build:
+#      - composer install
+#  postgres:
+#    type: postgres:12
+#    portforward: true
+#    creds:
+#      database: drupal9
+#events:
+#  post-start:
+#    # Sleep for a few seconds since Drush load appears to be a race condition.
+#    - sleep 5
+#    - drush status
+#    # Turn on dev modules excluded from config export.
+#    - drush en config dblog devel devel_generate update webprofiler --debug
+#    - drush cr
+tooling:
+  drush:
+    service: appserver
+    env:
+      DRUSH_OPTIONS_URI: "https://the-cms.lndo.site"
+#excludes:
+#  - vendor
+#  - web/core
+#  - web/private
+env_file:
+  - .env

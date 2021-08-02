@@ -1,0 +1,19 @@
+uuid: 421c2e8f-4698-4222-82f3-4f75e4f9da86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fund_owners
+    - node.type.fund
+id: node.fund.field_fund_owners
+field_name: field_fund_owners
+entity_type: node
+bundle: fund
+label: 'Fund Owners'
+description: 'The people who request changes to this fund.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

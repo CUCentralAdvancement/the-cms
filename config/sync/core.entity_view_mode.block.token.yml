@@ -1,0 +1,10 @@
+uuid: fed72301-3e18-4b76-aed7-c2f7ec50097b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+id: block.token
+label: Token
+targetEntityType: block
+cache: true

@@ -1,0 +1,4394 @@
+[
+  {
+    "tid": "1187",
+    "vid": "8",
+    "name": "Addiction Research and Treatment Services (ARTS)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1147",
+    "vid": "8",
+    "name": "Adelina Gomez Scholars Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1001",
+    "vid": "8",
+    "name": "Aerospace Engineering Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1051",
+    "vid": "8",
+    "name": "Allergy, Asthma and Clinical Immunology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1035",
+    "vid": "8",
+    "name": "Alternative Breaks Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1079",
+    "vid": "8",
+    "name": "Altitude Research Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "928",
+    "vid": "8",
+    "name": "Alumni Association",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1030",
+    "vid": "8",
+    "name": "American Indian Law Clinic",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1152",
+    "vid": "8",
+    "name": "American Music Research Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1304",
+    "vid": "8",
+    "name": "Anderson Language and Technology Center (ALTEC)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1097",
+    "vid": "8",
+    "name": "Anesthesiology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1090",
+    "vid": "8",
+    "name": "Anschutz Health and Wellness Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "906",
+    "vid": "8",
+    "name": "Anthropology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "988",
+    "vid": "8",
+    "name": "Applied Mathematics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "959",
+    "vid": "8",
+    "name": "Art and Art History",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "955",
+    "vid": "8",
+    "name": "Artist Series",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1008",
+    "vid": "8",
+    "name": "ArtsBridge Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1132",
+    "vid": "8",
+    "name": "Asian American Student Services",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "979",
+    "vid": "8",
+    "name": "Asian Languages \u0026 Civilizations",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1004",
+    "vid": "8",
+    "name": "Asian Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "994",
+    "vid": "8",
+    "name": "Astronomy",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "993",
+    "vid": "8",
+    "name": "Astrophysical and Planetary Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "952",
+    "vid": "8",
+    "name": "Athletics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1002",
+    "vid": "8",
+    "name": "ATLAS Institute",
+    "description": "",
+    "format": "full_html",
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1021",
+    "vid": "8",
+    "name": "Atmospheric and Oceanic Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1098",
+    "vid": "8",
+    "name": "Barbara Davis Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1329",
+    "vid": "8",
+    "name": "Biochemistry",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1199",
+    "vid": "8",
+    "name": "Biochemistry and Molecular Genetics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1019",
+    "vid": "8",
+    "name": "BioFrontiers Institute",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1169",
+    "vid": "8",
+    "name": "Biology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1126",
+    "vid": "8",
+    "name": "Boots to Suits Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "968",
+    "vid": "8",
+    "name": "BUENO Center for Multicultural Education",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1104",
+    "vid": "8",
+    "name": "Business School",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1408",
+    "vid": "8",
+    "name": "C3BC",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1219",
+    "vid": "8",
+    "name": "Campus Programs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1052",
+    "vid": "8",
+    "name": "Cancer Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1056",
+    "vid": "8",
+    "name": "Cardiology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "982",
+    "vid": "8",
+    "name": "Career Services",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1071",
+    "vid": "8",
+    "name": "Cell \u0026 Developmental Biology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1084",
+    "vid": "8",
+    "name": "Center for Advancing Professional Excellence",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1411",
+    "vid": "8",
+    "name": "Center for African and African American Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1005",
+    "vid": "8",
+    "name": "Center for Asian Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1070",
+    "vid": "8",
+    "name": "Center for Bioethics and Humanities",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "984",
+    "vid": "8",
+    "name": "Center for British and Irish Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1165",
+    "vid": "8",
+    "name": "Center for Colorado and the West",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1160",
+    "vid": "8",
+    "name": "Center for Community (C4C)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1252",
+    "vid": "8",
+    "name": "Center for Education on Social Responsibility",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1015",
+    "vid": "8",
+    "name": "Center for Energy and Environment Security",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1125",
+    "vid": "8",
+    "name": "Center for Faculty Development",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1089",
+    "vid": "8",
+    "name": "Center for Global Health",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1369",
+    "vid": "8",
+    "name": "Center for Health",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1044",
+    "vid": "8",
+    "name": "Center for Humanities and Arts",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1311",
+    "vid": "8",
+    "name": "Center for Identity \u0026 Inclusion",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1016",
+    "vid": "8",
+    "name": "Center for Medieval and Early Modern Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1353",
+    "vid": "8",
+    "name": "Center for Native American and Indigenous Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1095",
+    "vid": "8",
+    "name": "Center for NeuroScience",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1120",
+    "vid": "8",
+    "name": "Center for Pre-Collegiate and Academic Outreach Programs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1241",
+    "vid": "8",
+    "name": "Center for Student Involvement",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1195",
+    "vid": "8",
+    "name": "Center for the Study \u0026 Prevention of Violence",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1216",
+    "vid": "8",
+    "name": "Center for Water, Earth Science and Technology (CWEST)",
+    "description": "",
+    "format": "full_html",
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1078",
+    "vid": "8",
+    "name": "Center for Women\u0027s Health Research",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "973",
+    "vid": "8",
+    "name": "Center of the American West",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1031",
+    "vid": "8",
+    "name": "Center to Advance Research and Teaching in the Social Sciences (CARTSS)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1145",
+    "vid": "8",
+    "name": "Chancellor\u0027s Leadership Class",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1404",
+    "vid": "8",
+    "name": "Chancellor\u0027s Office",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1346",
+    "vid": "8",
+    "name": "Chancellor, University of Colorado Boulder",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "942",
+    "vid": "8",
+    "name": "Chemical and Biological Engineering",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1109",
+    "vid": "8",
+    "name": "Chemistry",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "913",
+    "vid": "8",
+    "name": "Chemistry \u0026 Biochemistry",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1189",
+    "vid": "8",
+    "name": "Children",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1376",
+    "vid": "8",
+    "name": "Choral",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1116",
+    "vid": "8",
+    "name": "Civil Engineering",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "943",
+    "vid": "8",
+    "name": "Civil, Environmental and Architectural Engineering",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "914",
+    "vid": "8",
+    "name": "Classics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1083",
+    "vid": "8",
+    "name": "Clinical Pharmacology and Toxicology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1183",
+    "vid": "8",
+    "name": "Coleman Institute for Cognitive Disabilities",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1294",
+    "vid": "8",
+    "name": "College Music",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1101",
+    "vid": "8",
+    "name": "College of Architecture and Planning",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1107",
+    "vid": "8",
+    "name": "College of Arts \u0026 Media (CAM)",
+    "description": "",
+    "format": "full_html",
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "905",
+    "vid": "8",
+    "name": "College of Arts and Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1378",
+    "vid": "8",
+    "name": "College of Business",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1135",
+    "vid": "8",
+    "name": "College of Business and Administration",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1138",
+    "vid": "8",
+    "name": "College of Education",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "941",
+    "vid": "8",
+    "name": "College of Engineering and Applied Science",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1305",
+    "vid": "8",
+    "name": "College of Engineering, Design and Computing",
+    "description": "",
+    "format": "full_html",
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1302",
+    "vid": "8",
+    "name": "college of letters",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1136",
+    "vid": "8",
+    "name": "College of Letters, Arts and Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1102",
+    "vid": "8",
+    "name": "College of Liberal Arts and Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1282",
+    "vid": "8",
+    "name": "College of Media",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "918",
+    "vid": "8",
+    "name": "College of Media, Communication and Information",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "948",
+    "vid": "8",
+    "name": "College of Music",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1063",
+    "vid": "8",
+    "name": "College of Nursing",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1161",
+    "vid": "8",
+    "name": "Collegiate Recover Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1387",
+    "vid": "8",
+    "name": "Collegiate Recovery Community",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1196",
+    "vid": "8",
+    "name": "Colorado Center for Astrodynamics Research (CCAR)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1093",
+    "vid": "8",
+    "name": "Colorado Clinical and Translational Sciences Institute",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1159",
+    "vid": "8",
+    "name": "Colorado Dialect Project Fund",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1363",
+    "vid": "8",
+    "name": "Colorado European Union Center of Excellence",
+    "description": "",
+    "format": "full_html",
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1151",
+    "vid": "8",
+    "name": "Colorado Learning and Teaching with Technology (COLTT)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1290",
+    "vid": "8",
+    "name": "Colorado Opportunity Scholarship Initiative",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1088",
+    "vid": "8",
+    "name": "Colorado School of Public Health",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "916",
+    "vid": "8",
+    "name": "Colorado Shakespeare Festival",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "919",
+    "vid": "8",
+    "name": "Communication",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1080",
+    "vid": "8",
+    "name": "Computational Bioscience",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1117",
+    "vid": "8",
+    "name": "Computer Science",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "969",
+    "vid": "8",
+    "name": "Conference on World Affairs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "999",
+    "vid": "8",
+    "name": "Conflict Information Consortium",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1202",
+    "vid": "8",
+    "name": "Cooperative Institute for Research in Environmental Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1248",
+    "vid": "8",
+    "name": "Cooperative Institute for Research in Environmental Sciences (CIRES)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1027",
+    "vid": "8",
+    "name": "Counseling and Psychiatric Services",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1186",
+    "vid": "8",
+    "name": "Criminal Justice",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1143",
+    "vid": "8",
+    "name": "CU Aging Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1009",
+    "vid": "8",
+    "name": "CU Art Museum",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "949",
+    "vid": "8",
+    "name": "CU Bands",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1040",
+    "vid": "8",
+    "name": "CU Bridges to Prosperity",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1032",
+    "vid": "8",
+    "name": "CU Collegiate Recovery Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1099",
+    "vid": "8",
+    "name": "CU Depression Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "956",
+    "vid": "8",
+    "name": "CU Engage",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1354",
+    "vid": "8",
+    "name": "CU Engineers in Action",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "975",
+    "vid": "8",
+    "name": "CU Heritage Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1024",
+    "vid": "8",
+    "name": "CU in DC Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "997",
+    "vid": "8",
+    "name": "CU LEAD Alliance",
+    "description": "",
+    "format": "full_html",
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1037",
+    "vid": "8",
+    "name": "CU Real Estate Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1394",
+    "vid": "8",
+    "name": "CU-LEAD",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1022",
+    "vid": "8",
+    "name": "Culture, Language and Social Practice Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1179",
+    "vid": "8",
+    "name": "Curiosity Unlimited Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "987",
+    "vid": "8",
+    "name": "Deming Center for Entrepreneurship",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1111",
+    "vid": "8",
+    "name": "Denver Community Leadership Forum",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1317",
+    "vid": "8",
+    "name": "Department of Cinema Studies \u0026 Moving Image Arts",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1349",
+    "vid": "8",
+    "name": "Department of Emergency Medicine",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1350",
+    "vid": "8",
+    "name": "Department of Medicine",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1362",
+    "vid": "8",
+    "name": "Department of Neurology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1397",
+    "vid": "8",
+    "name": "department of o",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1405",
+    "vid": "8",
+    "name": "Department of Ophthalmology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1416",
+    "vid": "8",
+    "name": "Department of Surgery",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1057",
+    "vid": "8",
+    "name": "Dermatology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1156",
+    "vid": "8",
+    "name": "Digital CUrrents Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "970",
+    "vid": "8",
+    "name": "Disability Services",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1345",
+    "vid": "8",
+    "name": "Division of Hematology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1351",
+    "vid": "8",
+    "name": "Division of Pulmonary",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1164",
+    "vid": "8",
+    "name": "E-Learning Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "911",
+    "vid": "8",
+    "name": "Ecology and Evolutionary Biology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "921",
+    "vid": "8",
+    "name": "Economics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1131",
+    "vid": "8",
+    "name": "Educational Opportunities Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "980",
+    "vid": "8",
+    "name": "Eklund Opera",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1338",
+    "vid": "8",
+    "name": "El Pomar Institute for Innovation and Commercialization (EPIIC)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1239",
+    "vid": "8",
+    "name": "Electrical",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1118",
+    "vid": "8",
+    "name": "Electrical Engineering",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "944",
+    "vid": "8",
+    "name": "Electrical, Computer and Energy Engineering",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1348",
+    "vid": "8",
+    "name": "Emergency Support",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1069",
+    "vid": "8",
+    "name": "Endocrinology, Metabolism and Diabetes",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1158",
+    "vid": "8",
+    "name": "Engineering Entrepreneurship Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "960",
+    "vid": "8",
+    "name": "Engineering Physics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "922",
+    "vid": "8",
+    "name": "English",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1149",
+    "vid": "8",
+    "name": "Ent Center for the Arts",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "989",
+    "vid": "8",
+    "name": "Entrepreneurship Center for Music",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1332",
+    "vid": "8",
+    "name": "ENVD",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "990",
+    "vid": "8",
+    "name": "Environmental Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1039",
+    "vid": "8",
+    "name": "Esteemed Scholars Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1029",
+    "vid": "8",
+    "name": "Ethnic Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1181",
+    "vid": "8",
+    "name": "Executive MBA Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1249",
+    "vid": "8",
+    "name": "Experiential Learning Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1139",
+    "vid": "8",
+    "name": "Family Development Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1077",
+    "vid": "8",
+    "name": "Family Medicine",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "967",
+    "vid": "8",
+    "name": "Film Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1352",
+    "vid": "8",
+    "name": "First Peoples Worldwide",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "995",
+    "vid": "8",
+    "name": "Fiske Planetarium",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1128",
+    "vid": "8",
+    "name": "Food Pantry",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1320",
+    "vid": "8",
+    "name": "ForeverGold",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "923",
+    "vid": "8",
+    "name": "French and Italian",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1137",
+    "vid": "8",
+    "name": "Gallery of Contemporary Art",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1082",
+    "vid": "8",
+    "name": "Gastroenterology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1085",
+    "vid": "8",
+    "name": "Gates Center for Regenerative Medicine",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "985",
+    "vid": "8",
+    "name": "Gay Lesbian Bisexual Transgender Queer (GLBTQ) Resource Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1049",
+    "vid": "8",
+    "name": "General Internal Medicine",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "926",
+    "vid": "8",
+    "name": "Geography",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1103",
+    "vid": "8",
+    "name": "Geography and Environmental Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1141",
+    "vid": "8",
+    "name": "Geography and Environmental Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "925",
+    "vid": "8",
+    "name": "Geology\/Geological Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1094",
+    "vid": "8",
+    "name": "Geriatrics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "927",
+    "vid": "8",
+    "name": "Germanic and Slavic Languages and Literatures",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1176",
+    "vid": "8",
+    "name": "Gerontology Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1025",
+    "vid": "8",
+    "name": "Global Studies RAP",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1403",
+    "vid": "8",
+    "name": "Golden Buffalo Marching Band",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "964",
+    "vid": "8",
+    "name": "Graduate School",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1185",
+    "vid": "8",
+    "name": "Guardian Scholars Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1374",
+    "vid": "8",
+    "name": "Gynecologic Oncology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1121",
+    "vid": "8",
+    "name": "Health and Behavioral Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1087",
+    "vid": "8",
+    "name": "Health Care Policy \u0026 Research",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1162",
+    "vid": "8",
+    "name": "Health Science Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1163",
+    "vid": "8",
+    "name": "Health Sciences Library",
+    "description": "",
+    "format": "full_html",
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1142",
+    "vid": "8",
+    "name": "Helen and Arthur E. Johnson Beth-El College of Nursing and Health Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1330",
+    "vid": "8",
+    "name": "Helen and Arthur E. Johnson Depression Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1175",
+    "vid": "8",
+    "name": "Heller Center for Arts and Humanities",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1092",
+    "vid": "8",
+    "name": "Hematology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "929",
+    "vid": "8",
+    "name": "History",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "912",
+    "vid": "8",
+    "name": "Honors",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1123",
+    "vid": "8",
+    "name": "Honors and Leadership Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1389",
+    "vid": "8",
+    "name": "Honors Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "972",
+    "vid": "8",
+    "name": "Humanities",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1076",
+    "vid": "8",
+    "name": "Immunology and Microbiology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1074",
+    "vid": "8",
+    "name": "Infectious Disease",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1284",
+    "vid": "8",
+    "name": "Information Systems",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1313",
+    "vid": "8",
+    "name": "INSTAAR: Institute of Arctic and Alpine",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1042",
+    "vid": "8",
+    "name": "Institute of Arctic and Alpine Research (INSTAAR)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1220",
+    "vid": "8",
+    "name": "Institute of Behavioral Science",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1045",
+    "vid": "8",
+    "name": "Institute of Cognitive Science (ICS)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1153",
+    "vid": "8",
+    "name": "Integrated Teaching and Learning Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1113",
+    "vid": "8",
+    "name": "Integrative Biology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "933",
+    "vid": "8",
+    "name": "Integrative Physiology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "961",
+    "vid": "8",
+    "name": "Interdisciplinary Telecommunications Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "974",
+    "vid": "8",
+    "name": "International Affairs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "957",
+    "vid": "8",
+    "name": "INVST Community Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1010",
+    "vid": "8",
+    "name": "Jazz Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1023",
+    "vid": "8",
+    "name": "Jewish Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1337",
+    "vid": "8",
+    "name": "JILA",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1168",
+    "vid": "8",
+    "name": "Kraemer Family Library",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1243",
+    "vid": "8",
+    "name": "Laboratory for Atmospheric and Space Physics (LASP)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1119",
+    "vid": "8",
+    "name": "Landscape Architecture",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1171",
+    "vid": "8",
+    "name": "Languages and Cultures",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "939",
+    "vid": "8",
+    "name": "Leeds School of Business",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1012",
+    "vid": "8",
+    "name": "Lesbian, Gay, Bisexual, Transgender and Queer Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1225",
+    "vid": "8",
+    "name": "Letters",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1041",
+    "vid": "8",
+    "name": "Libraries",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1278",
+    "vid": "8",
+    "name": "Library",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1281",
+    "vid": "8",
+    "name": "Linda Crnic Institute for Down Syndrome",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "930",
+    "vid": "8",
+    "name": "Linguistics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "962",
+    "vid": "8",
+    "name": "Lockheed Martin Engineering Management Program",
+    "description": "",
+    "format": "full_html",
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1361",
+    "vid": "8",
+    "name": "LynxConnect",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1407",
+    "vid": "8",
+    "name": "Macular Degeneration Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1221",
+    "vid": "8",
+    "name": "Marcus Institute for Brain Health",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "966",
+    "vid": "8",
+    "name": "Marketing",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1110",
+    "vid": "8",
+    "name": "Mathematical and Statistical Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "931",
+    "vid": "8",
+    "name": "Mathematics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1038",
+    "vid": "8",
+    "name": "McNeill Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "945",
+    "vid": "8",
+    "name": "Mechanical Engineering",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1054",
+    "vid": "8",
+    "name": "Medical Oncology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1048",
+    "vid": "8",
+    "name": "Medicine",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1192",
+    "vid": "8",
+    "name": "Medicine and Service (SEMS)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1144",
+    "vid": "8",
+    "name": "Men\u0027s Golf Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1197",
+    "vid": "8",
+    "name": "Miramontes Arts \u0026 Sciences Program (MASP)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1115",
+    "vid": "8",
+    "name": "Modern Languages",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "909",
+    "vid": "8",
+    "name": "Molecular, Cellular and Developmental Biology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1182",
+    "vid": "8",
+    "name": "MOOC Initiative",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "998",
+    "vid": "8",
+    "name": "Museum of Natural History",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1291",
+    "vid": "8",
+    "name": "National Center for Women and Information Technology (NCWIT)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1017",
+    "vid": "8",
+    "name": "National Education Policy Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1359",
+    "vid": "8",
+    "name": "National Institute for Human Resilience",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1286",
+    "vid": "8",
+    "name": "National Mental Health Innovation Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1401",
+    "vid": "8",
+    "name": "Natural Hazards Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1073",
+    "vid": "8",
+    "name": "Neurology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1081",
+    "vid": "8",
+    "name": "Neurosurgery",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "992",
+    "vid": "8",
+    "name": "Norlin Scholars Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1059",
+    "vid": "8",
+    "name": "Obstetrics and Gynecology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1130",
+    "vid": "8",
+    "name": "Office of Diversity and Inclusion",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1028",
+    "vid": "8",
+    "name": "Office of Diversity, Equity, and Community Engagement",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1247",
+    "vid": "8",
+    "name": "Office of Financial Aid",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1382",
+    "vid": "8",
+    "name": "Office of Financial Aid and Scholarships",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1371",
+    "vid": "8",
+    "name": "Office of Financial Aid and Student Employment",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1122",
+    "vid": "8",
+    "name": "Office of International Affairs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "976",
+    "vid": "8",
+    "name": "Office of International Education",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1336",
+    "vid": "8",
+    "name": "Office of Research",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1006",
+    "vid": "8",
+    "name": "Office of Student Affairs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1127",
+    "vid": "8",
+    "name": "Office of Student Life",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1148",
+    "vid": "8",
+    "name": "Office of Veteran and Military Student Affairs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1167",
+    "vid": "8",
+    "name": "Office of Veteran Student Services",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1018",
+    "vid": "8",
+    "name": "Office of Veterans Affairs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1007",
+    "vid": "8",
+    "name": "Office of Victim Assistance",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1060",
+    "vid": "8",
+    "name": "Ophthalmology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1062",
+    "vid": "8",
+    "name": "Orthopedics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1067",
+    "vid": "8",
+    "name": "Otolaryngology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "991",
+    "vid": "8",
+    "name": "Parent Relations",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1061",
+    "vid": "8",
+    "name": "Pathology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1003",
+    "vid": "8",
+    "name": "Peace and Conflict Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1053",
+    "vid": "8",
+    "name": "Pediatrics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1180",
+    "vid": "8",
+    "name": "PGA Golf Management Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1068",
+    "vid": "8",
+    "name": "Pharmacology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1157",
+    "vid": "8",
+    "name": "PhET Interactive Simulations",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "932",
+    "vid": "8",
+    "name": "Philosophy",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1064",
+    "vid": "8",
+    "name": "Physical Medicine and Rehabilitation",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1065",
+    "vid": "8",
+    "name": "Physical Therapy",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "934",
+    "vid": "8",
+    "name": "Physics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1172",
+    "vid": "8",
+    "name": "Physics and Energy Science",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1091",
+    "vid": "8",
+    "name": "Physiology and Biophysics",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "935",
+    "vid": "8",
+    "name": "Political Science",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1013",
+    "vid": "8",
+    "name": "Pre-Collegiate Development Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1184",
+    "vid": "8",
+    "name": "President\u0027s Teaching Scholars Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1011",
+    "vid": "8",
+    "name": "Presidents Leadership Class (PLC)",
+    "description": "",
+    "format": "full_html",
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1000",
+    "vid": "8",
+    "name": "Program for Writing \u0026 Rhetoric",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1036",
+    "vid": "8",
+    "name": "Program in Environmental Design",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1072",
+    "vid": "8",
+    "name": "Psychiatry",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1112",
+    "vid": "8",
+    "name": "Psychology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "924",
+    "vid": "8",
+    "name": "Psychology and Neuroscience",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1014",
+    "vid": "8",
+    "name": "Public Interest Internship Experience",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1058",
+    "vid": "8",
+    "name": "Pulmonary Sciences and Critical Care",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1303",
+    "vid": "8",
+    "name": "Radiation Oncology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1075",
+    "vid": "8",
+    "name": "Radiology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "954",
+    "vid": "8",
+    "name": "Recreation Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "963",
+    "vid": "8",
+    "name": "Religious Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1096",
+    "vid": "8",
+    "name": "Renal Medicine Disease \u0026 Hypertension (Nephrology)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1020",
+    "vid": "8",
+    "name": "Renewable and Sustainable Energy Institute (RASEI)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1193",
+    "vid": "8",
+    "name": "Research and Evaluation Methodology (REM) Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1383",
+    "vid": "8",
+    "name": "Research and Innovation Office",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1384",
+    "vid": "8",
+    "name": "Research Institute",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "978",
+    "vid": "8",
+    "name": "Residential Academic Programs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1086",
+    "vid": "8",
+    "name": "Rheumatology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1319",
+    "vid": "8",
+    "name": "Rocky Mountain Alzheimer\u0027s Disease Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1406",
+    "vid": "8",
+    "name": "Rocky Mountain Lions Eye Institute",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1410",
+    "vid": "8",
+    "name": "Roser Piano and Keyboard Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "965",
+    "vid": "8",
+    "name": "ROTC",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1215",
+    "vid": "8",
+    "name": "Rural Track Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1066",
+    "vid": "8",
+    "name": "School of Dental Medicine",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "940",
+    "vid": "8",
+    "name": "School of Education",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1105",
+    "vid": "8",
+    "name": "School of Education and Human Development",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "947",
+    "vid": "8",
+    "name": "School of Law",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1047",
+    "vid": "8",
+    "name": "School of Medicine",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1108",
+    "vid": "8",
+    "name": "School of Public Affairs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "981",
+    "vid": "8",
+    "name": "Science Discovery Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "996",
+    "vid": "8",
+    "name": "Silicon Flatirons Center for Law, Technology, and Entrepreneurship",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1050",
+    "vid": "8",
+    "name": "Skaggs School of Pharmacy and Pharmaceutical Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "936",
+    "vid": "8",
+    "name": "Sociology",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1177",
+    "vid": "8",
+    "name": "Southern Colorado Girls\u0027 STEM Initiative",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "937",
+    "vid": "8",
+    "name": "Spanish and Portuguese",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1034",
+    "vid": "8",
+    "name": "Spanish Club",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "920",
+    "vid": "8",
+    "name": "Speech, Language and Hearing Sciences",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1396",
+    "vid": "8",
+    "name": "Strings",
+    "description": "",
+    "format": "full_html",
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "951",
+    "vid": "8",
+    "name": "Student Recreation Services",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1218",
+    "vid": "8",
+    "name": "Student Wellness Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1191",
+    "vid": "8",
+    "name": "Students for Education",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "977",
+    "vid": "8",
+    "name": "Study Abroad Programs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1055",
+    "vid": "8",
+    "name": "Surgery",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1198",
+    "vid": "8",
+    "name": "Sustainability Innovation Lab",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1188",
+    "vid": "8",
+    "name": "Sustainable Excellence Initiative (SEI)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1341",
+    "vid": "8",
+    "name": "Technology, Cybersecurity and Policy Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1316",
+    "vid": "8",
+    "name": "The Ren\u00e9e Crown Wellness Institute",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "915",
+    "vid": "8",
+    "name": "Theatre and Dance",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1140",
+    "vid": "8",
+    "name": "TheatreWorks",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1178",
+    "vid": "8",
+    "name": "Trauma, Health and Hazards Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1194",
+    "vid": "8",
+    "name": "UCCS Aging Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1280",
+    "vid": "8",
+    "name": "UCCS Campus Recreation",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1224",
+    "vid": "8",
+    "name": "UCCS Presents",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1201",
+    "vid": "8",
+    "name": "undefined",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1200",
+    "vid": "8",
+    "name": "Undergraduate Education",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1146",
+    "vid": "8",
+    "name": "University Counseling Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1307",
+    "vid": "8",
+    "name": "University of Colorado Hospital",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1106",
+    "vid": "8",
+    "name": "Urban and Regional Planning",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1133",
+    "vid": "8",
+    "name": "Urban Design",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1315",
+    "vid": "8",
+    "name": "VC Student Affairs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1283",
+    "vid": "8",
+    "name": "VCSS",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1400",
+    "vid": "8",
+    "name": "Veteran and Military Connected Student Services",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1287",
+    "vid": "8",
+    "name": "Vice Chancellor for Administration and Finance (VCAF)",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1381",
+    "vid": "8",
+    "name": "Vice Chancellor for Health Affairs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1355",
+    "vid": "8",
+    "name": "Vice Chancellor for Research",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1340",
+    "vid": "8",
+    "name": "Vice Chancellor for Student Affairs",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1301",
+    "vid": "8",
+    "name": "Vice Chancellor for Student Success",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1173",
+    "vid": "8",
+    "name": "Visual and Performing Arts",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1155",
+    "vid": "8",
+    "name": "Visual Arts Complex Building",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1375",
+    "vid": "8",
+    "name": "Voice",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1033",
+    "vid": "8",
+    "name": "Volunteer Resource Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1026",
+    "vid": "8",
+    "name": "Wardenburg Health Services",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "938",
+    "vid": "8",
+    "name": "Women and Gender Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1174",
+    "vid": "8",
+    "name": "Women\u0027s and Ethnic Studies",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "986",
+    "vid": "8",
+    "name": "Women\u0027s Resource Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1370",
+    "vid": "8",
+    "name": "Work \u0026 Environment",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1114",
+    "vid": "8",
+    "name": "Writing Center",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  },
+  {
+    "tid": "1190",
+    "vid": "8",
+    "name": "Youth and Environments (CYE) Program",
+    "description": null,
+    "format": null,
+    "weight": "0",
+    "depth": 0,
+    "parents": [
+      "0"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+uuid: 88388abe-9f88-4972-8df2-c5b17d816d4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_featured_fund
+field_name: field_featured_fund
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

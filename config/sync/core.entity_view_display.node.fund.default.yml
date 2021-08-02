@@ -1,0 +1,426 @@
+uuid: d96344c2-1b46-4423-805c-72f214ca834e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fund.body
+    - field.field.node.fund.field_active
+    - field.field.node.fund.field_allocation_code
+    - field.field.node.fund.field_campus
+    - field.field.node.fund.field_content_expiration
+    - field.field.node.fund.field_description
+    - field.field.node.fund.field_featured_fund
+    - field.field.node.fund.field_fund_owners
+    - field.field.node.fund.field_fund_type
+    - field.field.node.fund.field_interest
+    - field.field.node.fund.field_keywords
+    - field.field.node.fund.field_marketing_content
+    - field.field.node.fund.field_status
+    - field.field.node.fund.field_suggested_amount
+    - field.field.node.fund.layout_builder__layout
+    - node.type.fund
+  module:
+    - datetime
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_discovery
+    - options
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          8e52ffc2-07b0-403d-ab0f-7b5872d132eb:
+            uuid: 8e52ffc2-07b0-403d-ab0f-7b5872d132eb
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:fund:links'
+            additional: {  }
+            weight: 0
+          8f142595-d65f-4514-93a7-d3283af38170:
+            uuid: 8f142595-d65f-4514-93a7-d3283af38170
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          2a8c2aa0-92fb-4cab-afde-3ad90b11e1da:
+            uuid: 2a8c2aa0-92fb-4cab-afde-3ad90b11e1da
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_fund_owners'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 2
+          94cd637a-9bf9-4380-bce1-61186fb5674f:
+            uuid: 94cd637a-9bf9-4380-bce1-61186fb5674f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_description'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: basic_string
+            additional: {  }
+            weight: 3
+          759eb967-4ebe-47d8-a729-e4697d939c6c:
+            uuid: 759eb967-4ebe-47d8-a729-e4697d939c6c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_content_expiration'
+              formatter:
+                label: above
+                settings:
+                  format_type: medium
+                  timezone_override: ''
+                third_party_settings: {  }
+                type: datetime_default
+            additional: {  }
+            weight: 4
+          4897e729-72ff-4147-8c9e-8dbd735d607f:
+            uuid: 4897e729-72ff-4147-8c9e-8dbd735d607f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_allocation_code'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 5
+          b4c0d085-d4b1-40fd-82a2-5b932070ad62:
+            uuid: b4c0d085-d4b1-40fd-82a2-5b932070ad62
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_suggested_amount'
+              formatter:
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+                type: number_decimal
+            additional: {  }
+            weight: 6
+          02436589-d6cd-49b5-902b-6685614a95dd:
+            uuid: 02436589-d6cd-49b5-902b-6685614a95dd
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_status'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 7
+          a0eabada-1784-4a3e-93a0-86c835b85ce4:
+            uuid: a0eabada-1784-4a3e-93a0-86c835b85ce4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_campus'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 8
+          c2661d59-b9ed-40f3-afc3-730521ad2bea:
+            uuid: c2661d59-b9ed-40f3-afc3-730521ad2bea
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_fund_type'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 9
+          5a106b12-062c-45ef-8df5-e3512b61dcf1:
+            uuid: 5a106b12-062c-45ef-8df5-e3512b61dcf1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_interest'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 10
+          364a386a-2cac-49de-a0f8-42eb9cca4216:
+            uuid: 364a386a-2cac-49de-a0f8-42eb9cca4216
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_keywords'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 11
+          891c0076-426a-45eb-9e88-8737dd7c4f7f:
+            uuid: 891c0076-426a-45eb-9e88-8737dd7c4f7f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_featured_fund'
+              formatter:
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+                type: boolean
+            additional: {  }
+            weight: 12
+          e5b98bfb-f6e4-45c5-948d-a4c6039f40c4:
+            uuid: e5b98bfb-f6e4-45c5-948d-a4c6039f40c4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_active'
+              formatter:
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+                type: boolean
+            additional: {  }
+            weight: 13
+          6d5924ab-ba62-4197-a2dc-73cb9ee1031e:
+            uuid: 6d5924ab-ba62-4197-a2dc-73cb9ee1031e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:fund:field_marketing_content'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 14
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      whitelisted_blocks:
+        'Content fields':
+          - 'field_block:node:fund:field_allocation_code'
+          - 'field_block:node:fund:body'
+          - 'field_block:node:fund:field_campus'
+          - 'field_block:node:fund:field_content_expiration'
+          - 'field_block:node:fund:field_description'
+          - 'field_block:node:fund:field_fund_owners'
+          - 'field_block:node:fund:field_fund_type'
+          - 'field_block:node:fund:field_interest'
+          - 'field_block:node:fund:field_keywords'
+          - 'field_block:node:fund:title'
+        Forms: {  }
+        'Lists (Views)': {  }
+        System: {  }
+        User: {  }
+      blacklisted_blocks: {  }
+      restricted_categories:
+        - 'Chaos Tools'
+        - Help
+        - Menus
+        - core
+      allowed_layouts: {  }
+id: node.fund.default
+targetEntityType: node
+bundle: fund
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_active:
+    weight: 113
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_allocation_code:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_campus:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_content_expiration:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_description:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_featured_fund:
+    weight: 112
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_fund_owners:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_fund_type:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_interest:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_keywords:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_marketing_content:
+    weight: 114
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_status:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_suggested_amount:
+    weight: 106
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  layout_builder__layout: true

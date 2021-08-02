@@ -1,0 +1,30 @@
+uuid: 65b1bbce-17d7-47ba-a2af-ddf222d923fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_fund_type
+field_name: field_fund_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: donation
+      label: Default
+    -
+      value: license_plate_fund
+      label: 'License Plate'
+    -
+      value: write_in_fund
+      label: Write-in
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

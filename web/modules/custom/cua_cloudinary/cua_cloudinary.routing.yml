@@ -1,0 +1,7 @@
+cua_cloudinary.settings_form:
+  path: '/admin/config/system/cua-cloudinary'
+  defaults:
+    _title: 'CUA Cloudinary settings'
+    _form: 'Drupal\cua_cloudinary\Form\SettingsForm'
+  requirements:
+    _permission: 'administer cua_cloudinary configuration'

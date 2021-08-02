@@ -1,0 +1,23 @@
+uuid: c103746e-9d38-4543-8f60-0bb8b5536ff5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fund_type
+    - node.type.fund
+  module:
+    - options
+id: node.fund.field_fund_type
+field_name: field_fund_type
+entity_type: node
+bundle: fund
+label: 'Fund Type'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

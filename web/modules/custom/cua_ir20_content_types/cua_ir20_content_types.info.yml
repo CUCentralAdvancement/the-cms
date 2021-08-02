@@ -1,0 +1,11 @@
+name: CUA IR20 Content Types
+type: module
+description: All code related to the IR20 content type UI and API responses.
+package: Advancement - CU-SYS
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:block
+  - drupal:image
+  - drupal:link
+  - drupal:node

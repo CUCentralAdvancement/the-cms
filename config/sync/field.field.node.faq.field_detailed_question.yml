@@ -1,0 +1,21 @@
+uuid: 6dc0547f-16cf-4a3e-983c-2b36f71258e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_detailed_question
+    - node.type.faq
+  module:
+    - text
+id: node.faq.field_detailed_question
+field_name: field_detailed_question
+entity_type: node
+bundle: faq
+label: 'Detailed Question'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

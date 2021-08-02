@@ -1,0 +1,4 @@
+administer cua_ir20_content_types configuration:
+  title: 'Administer cua_ir20_content_types configuration'
+  description: 'Optional description.'
+  restrict access: true

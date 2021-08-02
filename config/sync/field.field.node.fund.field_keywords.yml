@@ -1,0 +1,29 @@
+uuid: f84ca40f-38b6-4137-9d59-b07db2335260
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keywords
+    - node.type.fund
+    - taxonomy.vocabulary.keywords
+id: node.fund.field_keywords
+field_name: field_keywords
+entity_type: node
+bundle: fund
+label: Keywords
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      keywords: keywords
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

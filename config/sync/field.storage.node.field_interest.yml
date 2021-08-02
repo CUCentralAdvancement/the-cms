@@ -1,0 +1,45 @@
+uuid: c977ef29-4095-4cda-8d60-2ecb760fa622
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_interest
+field_name: field_interest
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Alumni Programs'
+      label: 'Alumni Programs'
+    -
+      value: 'Arts & Culture'
+      label: 'Arts & Culture'
+    -
+      value: 'Athletics & Recreation'
+      label: 'Athletics & Recreation'
+    -
+      value: 'Community & Society'
+      label: 'Community & Society'
+    -
+      value: 'Enterprise & Entrepreneurship'
+      label: 'Enterprise & Entrepreneurship'
+    -
+      value: 'Health & Wellness'
+      label: 'Health & Wellness'
+    -
+      value: 'Scholarships & Student Success'
+      label: 'Scholarships & Student Success'
+    -
+      value: 'Science, Research & Innovation'
+      label: 'Science, Research & Innovation'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

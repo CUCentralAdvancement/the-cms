@@ -1,0 +1,41 @@
+uuid: 9b8a5bba-0f21-42d9-a2e1-776d36c0b796
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_stuff
+    - node.type.impact_story
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.layout
+    - paragraphs.paragraphs_type.text_block
+  module:
+    - entity_reference_revisions
+id: node.impact_story.field_content_stuff
+field_name: field_content_stuff
+entity_type: node
+bundle: impact_story
+label: 'Content Stuff'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image: image
+      layout: layout
+      text_block: text_block
+    target_bundles_drag_drop:
+      image:
+        enabled: true
+        weight: 3
+      layout:
+        enabled: true
+        weight: 4
+      text_block:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

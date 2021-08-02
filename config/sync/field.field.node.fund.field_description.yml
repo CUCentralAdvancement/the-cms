@@ -1,0 +1,19 @@
+uuid: c90376bd-ad00-4ad6-8067-193fcfeb095b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.fund
+id: node.fund.field_description
+field_name: field_description
+entity_type: node
+bundle: fund
+label: Description
+description: 'The description coming from Advance, soon to be ascend.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

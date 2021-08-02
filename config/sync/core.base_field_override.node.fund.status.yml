@@ -1,0 +1,22 @@
+uuid: 68261be7-4cea-4c65-9854-5cc9915989dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fund
+id: node.fund.status
+field_name: status
+entity_type: node
+bundle: fund
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
