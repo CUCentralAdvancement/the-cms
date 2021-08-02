@@ -22,7 +22,6 @@ dependencies:
   module:
     - datetime
     - layout_builder
-    - layout_builder_restrictions
     - layout_discovery
     - options
     - text
@@ -273,32 +272,6 @@ third_party_settings:
             additional: {  }
             weight: 14
         third_party_settings: {  }
-  layout_builder_restrictions:
-    allowed_block_categories: {  }
-    entity_view_mode_restriction:
-      whitelisted_blocks:
-        'Content fields':
-          - 'field_block:node:fund:field_allocation_code'
-          - 'field_block:node:fund:body'
-          - 'field_block:node:fund:field_campus'
-          - 'field_block:node:fund:field_content_expiration'
-          - 'field_block:node:fund:field_description'
-          - 'field_block:node:fund:field_fund_owners'
-          - 'field_block:node:fund:field_fund_type'
-          - 'field_block:node:fund:field_interest'
-          - 'field_block:node:fund:field_keywords'
-          - 'field_block:node:fund:title'
-        Forms: {  }
-        'Lists (Views)': {  }
-        System: {  }
-        User: {  }
-      blacklisted_blocks: {  }
-      restricted_categories:
-        - 'Chaos Tools'
-        - Help
-        - Menus
-        - core
-      allowed_layouts: {  }
 id: node.fund.default
 targetEntityType: node
 bundle: fund

@@ -11,7 +11,6 @@ module:
   ctools: 0
   cua_cloudinary: 0
   cua_ir20_content_types: 0
-  cua_seed_content: 0
   datetime: 0
   dynamic_page_cache: 0
   editor: 0
@@ -22,17 +21,10 @@ module:
   filter: 0
   help: 0
   image: 0
-  jsonapi: 0
-  jsonapi_defaults: 0
-  jsonapi_extras: 0
   layout_builder: 0
-  layout_builder_modal: 0
-  layout_builder_restrictions: 0
   layout_discovery: 0
   layout_paragraphs: 0
   link: 0
-  media: 0
-  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0

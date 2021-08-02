@@ -9,7 +9,6 @@ dependencies:
     - node.type.page
   module:
     - layout_builder
-    - layout_builder_restrictions
     - layout_discovery
     - text
     - user
@@ -65,27 +64,6 @@ third_party_settings:
             additional: {  }
             weight: 2
         third_party_settings: {  }
-  layout_builder_restrictions:
-    allowed_block_categories: {  }
-    entity_view_mode_restriction:
-      whitelisted_blocks:
-        'Content fields':
-          - 'field_block:node:page:body'
-          - 'field_block:node:page:title'
-        'Lists (Views)': {  }
-        System:
-          - system_breadcrumb_block
-          - system_main_block
-        User: {  }
-        core:
-          - page_title_block
-      blacklisted_blocks: {  }
-      restricted_categories:
-        - 'Chaos Tools'
-        - Forms
-        - Help
-        - Menus
-      allowed_layouts: {  }
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default

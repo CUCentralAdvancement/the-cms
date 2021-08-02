@@ -10,7 +10,6 @@ dependencies:
   module:
     - entity_reference_revisions
     - layout_builder
-    - layout_builder_restrictions
     - layout_discovery
     - text
     - user
@@ -67,24 +66,6 @@ third_party_settings:
             additional: {  }
             weight: 2
         third_party_settings: {  }
-  layout_builder_restrictions:
-    allowed_block_categories: {  }
-    entity_view_mode_restriction:
-      whitelisted_blocks:
-        'Content fields':
-          - 'field_block:node:impact_story:body'
-          - 'field_block:node:impact_story:title'
-        'Lists (Views)': {  }
-      blacklisted_blocks: {  }
-      restricted_categories:
-        - 'Chaos Tools'
-        - Forms
-        - Help
-        - Menus
-        - System
-        - User
-        - core
-      allowed_layouts: {  }
 id: node.impact_story.default
 targetEntityType: node
 bundle: impact_story
