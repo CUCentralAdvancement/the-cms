@@ -1,14 +1,16 @@
-uuid: 2ceab55f-9041-451a-bc45-45ad3be854ae
+uuid: 3af8c0ea-a383-4adf-a5e8-f873dab7d389
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_description
-field_name: field_description
+id: node.field_url_redirect
+field_name: field_url_redirect
 entity_type: node
-type: string_long
+type: string
 settings:
+  max_length: 255
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

@@ -18,8 +18,8 @@ settings:
       value: 'Ways to Give'
       label: 'Ways to Give'
     -
-      value: 'General Questions'
-      label: 'General Questions'
+      value: 'General Questions About Giving at CU'
+      label: 'General Questions About Giving at CU'
   allowed_values_function: ''
 module: options
 locked: false

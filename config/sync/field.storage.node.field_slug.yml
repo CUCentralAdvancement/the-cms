@@ -1,11 +1,11 @@
-uuid: 83e7fed5-cde3-4972-8c74-ca3d92c31007
+uuid: 77c54dbf-4a03-4a08-b136-02caa2758bc6
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_path
-field_name: field_path
+id: node.field_slug
+field_name: field_slug
 entity_type: node
 type: string
 settings:

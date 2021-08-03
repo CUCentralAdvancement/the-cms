@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_path
+    - field.field.node.page.field_slug
     - field.field.node.page.layout_builder__layout
     - node.type.page
   module:
@@ -47,14 +47,14 @@ third_party_settings:
               id: 'extra_field_block:node:page:links'
             additional: {  }
             weight: 1
-          9ae56e7e-17e3-48fa-a466-736d051f8043:
-            uuid: 9ae56e7e-17e3-48fa-a466-736d051f8043
+          5b5818fe-2ee9-406c-9bfe-4d117816b62c:
+            uuid: 5b5818fe-2ee9-406c-9bfe-4d117816b62c
             region: content
             configuration:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:page:field_path'
+              id: 'field_block:node:page:field_slug'
               formatter:
                 label: above
                 settings:
@@ -78,7 +78,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_path:
+  field_slug:
     weight: 102
     label: above
     settings:

@@ -1,0 +1,21 @@
+uuid: d4baf0c2-da80-4c78-b36d-0eebd8178265
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slug
+    - node.type.impact_story
+id: node.impact_story.field_slug
+field_name: field_slug
+entity_type: node
+bundle: impact_story
+label: Slug
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: '[node:title]'
+default_value_callback: ''
+settings: {  }
+field_type: string

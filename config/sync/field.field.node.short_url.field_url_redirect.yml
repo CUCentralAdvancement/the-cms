@@ -1,0 +1,19 @@
+uuid: f6411071-f838-4581-b092-6f9dd6c462df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_redirect
+    - node.type.short_url
+id: node.short_url.field_url_redirect
+field_name: field_url_redirect
+entity_type: node
+bundle: short_url
+label: 'URL Redirect'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

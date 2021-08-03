@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
-    - field.field.node.page.field_path
+    - field.field.node.page.field_slug
     - field.field.node.page.layout_builder__layout
     - node.type.page
   module:
@@ -30,5 +30,5 @@ content:
     weight: 101
     region: content
 hidden:
-  field_path: true
+  field_slug: true
   layout_builder__layout: true

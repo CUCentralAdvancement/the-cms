@@ -1,18 +1,18 @@
-uuid: 70f07e6a-9850-443b-a641-dace88e1b67d
+uuid: 5941aba3-d402-46cf-86e6-2bb6e39cfe83
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_path
+    - field.storage.node.field_slug
     - node.type.faq
-id: node.faq.field_path
-field_name: field_path
+id: node.faq.field_slug
+field_name: field_slug
 entity_type: node
 bundle: faq
-label: Path
+label: Slug
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value:
   -
     value: '[node:title]'

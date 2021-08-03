@@ -1,0 +1,24 @@
+uuid: abd25dc1-c526-474d-8048-f77e0e05ceaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_expiration
+    - node.type.short_url
+  module:
+    - datetime
+id: node.short_url.field_content_expiration
+field_name: field_content_expiration
+entity_type: node
+bundle: short_url
+label: Expiration
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    default_date_type: relative
+    default_date: '+1 year'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

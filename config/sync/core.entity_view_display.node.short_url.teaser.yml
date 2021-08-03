@@ -1,0 +1,28 @@
+uuid: 41ca70ef-baed-45ee-bafe-787394aa6ebd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.short_url.field_content_expiration
+    - field.field.node.short_url.field_fund_owners
+    - field.field.node.short_url.field_url_redirect
+    - field.field.node.short_url.field_url_source
+    - node.type.short_url
+  module:
+    - user
+id: node.short_url.teaser
+targetEntityType: node
+bundle: short_url
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_content_expiration: true
+  field_fund_owners: true
+  field_url_redirect: true
+  field_url_source: true
