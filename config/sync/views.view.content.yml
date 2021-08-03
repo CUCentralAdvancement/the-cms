@@ -2,6 +2,11 @@ uuid: dba6e61a-c05e-445d-bb99-6cdfde9a4262
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.faq
+    - node.type.fund
+    - node.type.impact_story
+    - node.type.page
   module:
     - node
     - user
@@ -38,12 +43,24 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 50
+          items_per_page: 100
+          offset: 0
+          id: 0
+          total_pages: null
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
             first: '« First'
             last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       style:
         type: table
         options:
@@ -405,7 +422,11 @@ display:
           group_type: group
           admin_label: ''
           operator: in
-          value: {  }
+          value:
+            faq: faq
+            fund: fund
+            impact_story: impact_story
+            page: page
           group: 1
           exposed: true
           expose:
@@ -414,6 +435,8 @@ display:
             description: ''
             use_operator: false
             operator: type_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: type
             required: false
             remember: false
@@ -423,8 +446,6 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

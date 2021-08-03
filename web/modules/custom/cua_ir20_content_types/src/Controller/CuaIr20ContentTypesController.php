@@ -55,96 +55,37 @@ class CuaIr20ContentTypesController extends ControllerBase {
    * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
-  public function story(string $slug): JsonResponse {
-    $serializer = \Drupal::service('serializer');
-    $node_service = $this->entityTypeManager()->getStorage('node');
-    $file_service = $this->entityTypeManager()->getStorage('file');
-    $taxonomy_service = $this->entityTypeManager()->getStorage('taxonomy_term');
-
-    $nids = $node_service->loadByProperties(['field_story_slug' => $slug]);
-    $data = $node_service->load(array_keys($nids)[0]);
-    $node = json_decode($serializer->serialize($data, 'json', ['plugin_id' => 'entity']), TRUE);
+  public function fund(string $slug): JsonResponse {
+    $nids = $this->node_service->loadByProperties(['field_slug' => "fund/$slug"]);
+    $data = $this->node_service->load(array_keys($nids)[0]);
+    $node = json_decode($this->serializer->serialize($data, 'json', ['plugin_id' => 'entity']), TRUE);
 
     // Direct fields.
-    $story = [];
-    $story['title'] = $node["title"][0]["value"];
-    $story['subtitle'] = $node["body"][0]["summary"];
-    $story['body'] = $node["body"][0]["value"];
-    $story['priority'] = $node["field_story_priority"][0]["value"];
-    $story['slug'] = $node["field_story_slug"][0]["value"];
+    $fund = [];
+    $fund['title'] = $node["title"][0]["value"];
+    $fund['description'] = $node["body"][0]["value"];
+    $fund['campus'] = $node["field_campus"][0]["value"];
+    $fund['slug'] = $node["field_slug"][0]["value"];
+    $fund['interest'] = $node["field_interest"][0]["value"];
+    $fund['allocation_code'] = $node["field_allocation_code"][0]["value"];
+    $fund['suggested_amount'] = $node["field_suggested_amount"][0]["value"];
+    $fund['marketing_content'] = $node["field_marketing_content"][0]["value"];
+    $fund['created_at'] = $node["created"][0]["value"];
+    $fund['updated_at'] = $node["changed"][0]["value"];
+    $fund['fund_type'] = $node["field_fund_type"][0]["value"];
 
-    // Interests tag.
-    $term = $taxonomy_service->load($node["field_story_interest_tag"][0]["target_id"]);
-    $term_data = json_decode($serializer->serialize($term, 'json', ['plugin_id' => 'taxonomy']), TRUE);
-    $story['interest_tag'] = $term_data["name"][0]["value"];
-
-    // Campus tag.
-    $term = $taxonomy_service->load($node["field_story_campus_tag"][0]["target_id"]);
-    $term_data = json_decode($serializer->serialize($term, 'json', ['plugin_id' => 'taxonomy']), TRUE);
-    $story['campus_tag'] = $term_data["name"][0]["value"];
-
-    // Image Main.
-    $file = $file_service->load($node["field_story_image_main"][0]["target_id"]);
-    $file_stuff = json_decode($serializer->serialize($file, 'json', ['plugin_id' => 'file']), TRUE);
-    $story['image_main'] = [
-      'alt' => $node["field_story_image_main"][0]["alt"],
-      'caption' => $node["field_story_image_main"][0]["title"],
-      'width' => $node["field_story_image_main"][0]["width"],
-      'height' => $node["field_story_image_main"][0]["height"],
-      'url' => $file_stuff["uri"][0]["url"],
-    ];
-
-    // Image Card.
-    $file = $file_service->load($node["field_story_image_card"][0]["target_id"]);
-    $file_stuff = json_decode($serializer->serialize($file, 'json', ['plugin_id' => 'file']), TRUE);
-    $story['image_card'] = [
-      'alt' => $node["field_story_image_card"][0]["alt"],
-      'caption' => $node["field_story_image_card"][0]["title"],
-      'width' => $node["field_story_image_card"][0]["width"],
-      'height' => $node["field_story_image_card"][0]["height"],
-      'url' => $file_stuff["uri"][0]["url"],
-    ];
-
-    // Related stories.
-    $rs_nids = [];
-    foreach ($node["field_story_related"] as $rs) {
-      $rs_nids[] = $rs['target_id'];
+    // Keywords.
+    $keywords = [];
+    if (isset($node["field_keywords"])) {
+      foreach ($node["field_keywords"] as $keyword_data) {
+        $term = $this->taxonomy_service->load($keyword_data["target_id"]);
+        $term_data = json_decode($this->serializer->serialize($term, 'json', ['plugin_id' => 'taxonomy']), TRUE);
+        $keywords[] = $term_data["name"][0]["value"];
+      }
     }
-    $rs_nodes = $node_service->loadMultiple($rs_nids);
-    $rs_data = json_decode($serializer->serialize($rs_nodes, 'json', ['plugin_id' => 'entity']), TRUE);
-    foreach ($rs_data as $rs) {
-      $to_add = [
-        'title' => $rs["title"][0]["value"],
-        'priority' => $rs["field_story_priority"][0]["value"],
-        'slug' => $rs["field_story_slug"][0]["value"],
-        'subtitle' => $rs["body"][0]["summary"],
-      ];
+    $fund['keywords'] = implode(',', $keywords);
 
-      // Interests tag.
-      $term = $taxonomy_service->load($rs["field_story_interest_tag"][0]["target_id"]);
-      $term_data = json_decode($serializer->serialize($term, 'json', ['plugin_id' => 'taxonomy']), TRUE);
-      $to_add['interest_tag'] = $term_data["name"][0]["value"];
-
-      // Campus tag.
-      $term = $taxonomy_service->load($rs["field_story_campus_tag"][0]["target_id"]);
-      $term_data = json_decode($serializer->serialize($term, 'json', ['plugin_id' => 'taxonomy']), TRUE);
-      $to_add['campus_tag'] = $term_data["name"][0]["value"];
-
-      // Image Card.
-      $file = $file_service->load($rs["field_story_image_card"][0]["target_id"]);
-      $file_stuff = json_decode($serializer->serialize($file, 'json', ['plugin_id' => 'file']), TRUE);
-      $to_add['image_card'] = [
-        'alt' => $rs["field_story_image_card"][0]["alt"],
-        'caption' => $rs["field_story_image_card"][0]["title"],
-        'width' => $rs["field_story_image_card"][0]["width"],
-        'height' => $rs["field_story_image_card"][0]["height"],
-        'url' => $file_stuff["uri"][0]["url"],
-      ];
-
-      $story['related_stories'][] = $to_add;
-    }
-
-    return new JsonResponse($story);
+    return new JsonResponse($fund);
   }
 
   /**
@@ -156,53 +97,15 @@ class CuaIr20ContentTypesController extends ControllerBase {
    * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
-  public function stories(): JsonResponse {
-    $serializer = \Drupal::service('serializer');
-    $node_service = $this->entityTypeManager()->getStorage('node');
-    $file_service = $this->entityTypeManager()->getStorage('file');
-    $taxonomy_service = $this->entityTypeManager()->getStorage('taxonomy_term');
-
+  public function funds(): JsonResponse {
     $nids = \Drupal::entityQuery('node')
       ->condition('status', 1)
-      ->condition('type', 'story')
+      ->condition('type', 'fund')
       ->execute();
-    $nodes = $node_service->loadMultiple($nids);
-    $data = json_decode($serializer->serialize($nodes, 'json', ['plugin_id' => 'entity']), TRUE);
+    $nodes = $this->node_service->loadMultiple($nids);
+    $data = json_decode($this->serializer->serialize($nodes, 'json', ['plugin_id' => 'entity']), TRUE);
 
-    $stories = [];
-    foreach ($data as $node) {
-      // Direct fields.
-      $story = [];
-      $story['title'] = $node["title"][0]["value"];
-      $story['subtitle'] = $node["body"][0]["summary"];
-      $story['priority'] = $node["field_story_priority"][0]["value"];
-      $story['slug'] = $node["field_story_slug"][0]["value"];
-
-      // Interests tag.
-      $term = $taxonomy_service->load($node["field_story_interest_tag"][0]["target_id"]);
-      $term_data = json_decode($serializer->serialize($term, 'json', ['plugin_id' => 'taxonomy']), TRUE);
-      $story['interest_tag'] = $term_data["name"][0]["value"];
-
-      // Campus tag.
-      $term = $taxonomy_service->load($node["field_story_campus_tag"][0]["target_id"]);
-      $term_data = json_decode($serializer->serialize($term, 'json', ['plugin_id' => 'taxonomy']), TRUE);
-      $story['campus_tag'] = $term_data["name"][0]["value"];
-
-      // Image Card.
-      $file = $file_service->load($node["field_story_image_card"][0]["target_id"]);
-      $file_stuff = json_decode($serializer->serialize($file, 'json', ['plugin_id' => 'file']), TRUE);
-      $story['image_card'] = [
-        'alt' => $node["field_story_image_card"][0]["alt"],
-        'caption' => $node["field_story_image_card"][0]["title"],
-        'width' => $node["field_story_image_card"][0]["width"],
-        'height' => $node["field_story_image_card"][0]["height"],
-        'url' => $file_stuff["uri"][0]["url"],
-      ];
-
-      $stories[] = $story;
-    }
-
-    return new JsonResponse($stories);
+    return new JsonResponse($data);
   }
 
   /**
@@ -227,7 +130,7 @@ class CuaIr20ContentTypesController extends ControllerBase {
 
     $paths = [];
     foreach ($data as $node) {
-      $paths[] = $node["field_story_slug"][0]["value"];
+      $paths[] = explode('/', $node["field_slug"][0]["value"])[1];
     }
 
     return new JsonResponse($paths);
@@ -284,21 +187,6 @@ class CuaIr20ContentTypesController extends ControllerBase {
     return new JsonResponse($result);
   }
 
-  public function keywords(): JsonResponse {
-//    $term = $this->taxonomy_service->load(3);
-//    $term_data = json_decode($this->serializer->serialize($term, 'json', ['plugin_id' => 'taxonomy']), TRUE);
-
-
-    $terms = [];
-    foreach (explode(',', 'College of Arts and Sciences,Anthropology') as $keyword) {
-      $array = taxonomy_term_load_multiple_by_name($keyword);
-      $term = array_shift($array);
-      $term_data = json_decode($this->serializer->serialize($term, 'json', ['plugin_id' => 'taxonomy']), TRUE);
-      $terms[] = $term_data["tid"][0]["value"];
-    }
-
-    return new JsonResponse($terms);
-  }
 
   private function getTextBlockContent($block): array {
     return [

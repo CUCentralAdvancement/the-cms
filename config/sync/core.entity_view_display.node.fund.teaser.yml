@@ -9,13 +9,13 @@ dependencies:
     - field.field.node.fund.field_allocation_code
     - field.field.node.fund.field_campus
     - field.field.node.fund.field_content_expiration
-    - field.field.node.fund.field_description
     - field.field.node.fund.field_featured_fund
     - field.field.node.fund.field_fund_owners
     - field.field.node.fund.field_fund_type
     - field.field.node.fund.field_interest
     - field.field.node.fund.field_keywords
     - field.field.node.fund.field_marketing_content
+    - field.field.node.fund.field_slug
     - field.field.node.fund.field_status
     - field.field.node.fund.field_suggested_amount
     - field.field.node.fund.layout_builder__layout
@@ -46,13 +46,13 @@ hidden:
   field_allocation_code: true
   field_campus: true
   field_content_expiration: true
-  field_description: true
   field_featured_fund: true
   field_fund_owners: true
   field_fund_type: true
   field_interest: true
   field_keywords: true
   field_marketing_content: true
+  field_slug: true
   field_status: true
   field_suggested_amount: true
   layout_builder__layout: true

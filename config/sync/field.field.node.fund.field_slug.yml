@@ -1,15 +1,15 @@
-uuid: d285bd48-ff51-4bcd-8c6d-13830a728da9
+uuid: b2537046-94e6-4141-9871-9e2e160e2f66
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_path
-    - node.type.page
-id: node.page.field_path
-field_name: field_path
+    - field.storage.node.field_slug
+    - node.type.fund
+id: node.fund.field_slug
+field_name: field_slug
 entity_type: node
-bundle: page
-label: Path
+bundle: fund
+label: Slug
 description: ''
 required: true
 translatable: true

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.impact_story.body
     - field.field.node.impact_story.field_content_stuff
+    - field.field.node.impact_story.field_slug
     - field.field.node.impact_story.layout_builder__layout
     - node.type.impact_story
   module:
@@ -40,6 +41,14 @@ content:
       nesting_depth: 0
       require_layouts: 0
     third_party_settings: {  }
+    region: content
+  field_slug:
+    weight: 123
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   path:
     type: path

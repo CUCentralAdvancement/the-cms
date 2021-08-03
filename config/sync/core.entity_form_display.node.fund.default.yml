@@ -8,13 +8,13 @@ dependencies:
     - field.field.node.fund.field_allocation_code
     - field.field.node.fund.field_campus
     - field.field.node.fund.field_content_expiration
-    - field.field.node.fund.field_description
     - field.field.node.fund.field_featured_fund
     - field.field.node.fund.field_fund_owners
     - field.field.node.fund.field_fund_type
     - field.field.node.fund.field_interest
     - field.field.node.fund.field_keywords
     - field.field.node.fund.field_marketing_content
+    - field.field.node.fund.field_slug
     - field.field.node.fund.field_status
     - field.field.node.fund.field_suggested_amount
     - field.field.node.fund.layout_builder__layout
@@ -45,14 +45,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_active:
-    weight: 27
+    weight: 20
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_allocation_code:
-    weight: 11
+    weight: 12
     settings:
       size: 60
       placeholder: ''
@@ -60,34 +60,26 @@ content:
     type: string_textfield
     region: content
   field_campus:
-    weight: 14
+    weight: 15
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_content_expiration:
-    weight: 10
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_description:
-    weight: 8
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
   field_featured_fund:
-    weight: 26
+    weight: 19
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_fund_owners:
-    weight: 7
+    weight: 8
     settings:
       size: 60
       placeholder: ''
@@ -95,19 +87,19 @@ content:
     type: string_textfield
     region: content
   field_fund_type:
-    weight: 15
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_interest:
     weight: 16
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_keywords:
+  field_interest:
     weight: 17
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_keywords:
+    weight: 18
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -117,21 +109,29 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_marketing_content:
-    weight: 28
+    weight: 10
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_slug:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_status:
-    weight: 13
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_suggested_amount:
-    weight: 12
+    weight: 13
     settings:
       placeholder: ''
     third_party_settings: {  }

@@ -1,0 +1,18 @@
+uuid: 67edeb7e-1613-4a6e-84d1-6519180ba210
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Short URL'
+type: short_url
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

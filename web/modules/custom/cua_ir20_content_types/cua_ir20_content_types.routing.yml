@@ -6,22 +6,6 @@ cua_ir20_content_types.settings_form:
   requirements:
     _permission: 'administer cua_ir20_content_types configuration'
 
-keywords:
-  path: '/api/keywords'
-  defaults:
-    _title: 'Keywords'
-    _controller: '\Drupal\cua_ir20_content_types\Controller\CuaIr20ContentTypesController::keywords'
-  requirements:
-    _permission: 'access content'
-
-stories:
-  path: '/api/stories'
-  defaults:
-    _title: 'Stories'
-    _controller: '\Drupal\cua_ir20_content_types\Controller\CuaIr20ContentTypesController::stories'
-  requirements:
-    _permission: 'access content'
-
 impacts:
   path: '/api/impact-story/{id}'
   defaults:
@@ -30,18 +14,26 @@ impacts:
   requirements:
     _permission: 'access content'
 
-story:
-  path: '/api/story/{slug}'
+fundss:
+  path: '/api/funds'
   defaults:
-    _title: 'Story'
-    _controller: '\Drupal\cua_ir20_content_types\Controller\CuaIr20ContentTypesController::story'
+    _title: 'Funds'
+    _controller: '\Drupal\cua_ir20_content_types\Controller\CuaIr20ContentTypesController::funds'
+  requirements:
+    _permission: 'access content'
+
+fund:
+  path: '/api/funds/{slug}'
+  defaults:
+    _title: 'Fund Detail'
+    _controller: '\Drupal\cua_ir20_content_types\Controller\CuaIr20ContentTypesController::fund'
   requirements:
     _permission: 'access content'
 
 story_paths:
-  path: '/api/stories/paths'
+  path: '/api/paths/{type}'
   defaults:
-    _title: 'Story Paths'
+    _title: 'Content Type Paths'
     _controller: '\Drupal\cua_ir20_content_types\Controller\CuaIr20ContentTypesController::paths'
   requirements:
     _permission: 'access content'

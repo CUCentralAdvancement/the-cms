@@ -1,0 +1,57 @@
+uuid: 237946f5-7a6a-4f6e-b431-2576a8982f17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.short_url.field_content_expiration
+    - field.field.node.short_url.field_fund_owners
+    - field.field.node.short_url.field_url_redirect
+    - field.field.node.short_url.field_url_source
+    - node.type.short_url
+  module:
+    - datetime
+    - user
+id: node.short_url.default
+targetEntityType: node
+bundle: short_url
+mode: default
+content:
+  field_content_expiration:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_fund_owners:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_url_redirect:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_url_source:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
