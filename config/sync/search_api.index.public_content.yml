@@ -1,0 +1,207 @@
+uuid: d165e415-4a3c-47f6-861d-dc47bd16b285
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_allocation_code
+    - field.storage.node.field_campus
+    - field.storage.node.field_category
+    - field.storage.node.field_content_stuff
+    - field.storage.node.field_detailed_question
+    - field.storage.node.field_featured_fund
+    - field.storage.node.field_fund_type
+    - field.storage.node.field_interest
+    - field.storage.node.field_keywords
+    - field.storage.node.field_marketing_content
+    - field.storage.node.field_slug
+    - field.storage.node.field_status
+    - field.storage.node.field_suggested_amount
+    - search_api.server.algolia_search
+  module:
+    - node
+    - search_api
+id: public_content
+name: 'Public Content'
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Answer
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_allocation_code:
+    label: 'Allocation Code'
+    datasource_id: 'entity:node'
+    property_path: field_allocation_code
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_allocation_code
+  field_campus:
+    label: Campus
+    datasource_id: 'entity:node'
+    property_path: field_campus
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_campus
+  field_category:
+    label: Category
+    datasource_id: 'entity:node'
+    property_path: field_category
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_category
+  field_content_stuff:
+    label: 'Content Stuff'
+    datasource_id: 'entity:node'
+    property_path: field_content_stuff
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_content_stuff
+  field_detailed_question:
+    label: 'Detailed Question'
+    datasource_id: 'entity:node'
+    property_path: field_detailed_question
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_detailed_question
+  field_featured_fund:
+    label: 'Featured Fund'
+    datasource_id: 'entity:node'
+    property_path: field_featured_fund
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_featured_fund
+  field_fund_type:
+    label: 'Fund Type'
+    datasource_id: 'entity:node'
+    property_path: field_fund_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_fund_type
+  field_interest:
+    label: Interest
+    datasource_id: 'entity:node'
+    property_path: field_interest
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_interest
+  field_keywords:
+    label: Keywords
+    datasource_id: 'entity:node'
+    property_path: field_keywords
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_keywords
+  field_marketing_content:
+    label: 'Marketing Content'
+    datasource_id: 'entity:node'
+    property_path: field_marketing_content
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_marketing_content
+  field_slug:
+    label: Slug
+    datasource_id: 'entity:node'
+    property_path: field_slug
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_slug
+  field_status:
+    label: Status
+    datasource_id: 'entity:node'
+    property_path: field_status
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_status
+  field_suggested_amount:
+    label: 'Suggested Amount'
+    datasource_id: 'entity:node'
+    property_path: field_suggested_amount
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_suggested_amount
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected:
+        - short_url
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  html_filter:
+    all_fields: false
+    fields:
+      - body
+      - field_allocation_code
+      - field_campus
+      - field_category
+      - field_detailed_question
+      - field_fund_type
+      - field_interest
+      - field_marketing_content
+      - field_slug
+      - field_status
+      - field_suggested_amount
+      - title
+      - type
+    title: true
+    alt: true
+    tags:
+      b: 2
+      em: 1
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      u: 1
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: algolia_search
