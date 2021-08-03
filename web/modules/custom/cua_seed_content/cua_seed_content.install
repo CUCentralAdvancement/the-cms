@@ -47,7 +47,7 @@ function _cua_import_faqs($contents) {
     //    if ($key > 2) {
     //      continue;
     //    }
-    echo "Creating... $el->title \n";
+    echo "Creating FAQ... $el->title \n";
 
     $values = [
       'nid' => NULL,
@@ -75,14 +75,18 @@ function _cua_import_funds($contents) {
     //    if ($key > 2) {
     //      continue;
     //    }
-    echo "Creating... $el->title \n";
+    echo "Creating Fund... $el->title \n";
 
     $terms = [];
     foreach (explode(',', $el->keywords) as $keyword) {
       $array = taxonomy_term_load_multiple_by_name($keyword);
       $term = array_shift($array);
       $term_data = json_decode($serializer->serialize($term, 'json', ['plugin_id' => 'taxonomy']), TRUE);
-      $terms[] = $term_data["tid"][0]["value"];
+      if (isset($term_data["tid"])) {
+        $terms[] = $term_data["tid"][0]["value"];
+      } else {
+        echo "Keyword issue... $el->title \n";
+      }
     }
 
     $values = [
@@ -119,7 +123,7 @@ function _cua_import_keywords($keywords) {
     //    if ($key > 2) {
     //      continue;
     //    }
-    echo "Creating... $el->name \n";
+    echo "Creating Keyword... $el->name \n";
     $values = [
       'name' => $el->name,
       'vid' => 'keywords',
@@ -138,7 +142,7 @@ function _cua_import_pages($contents) {
     //    if ($key > 2) {
     //      continue;
     //    }
-    echo "Creating... $el->title \n";
+    echo "Creating Page... $el->title \n";
 
     $values = [
       'nid' => NULL,
@@ -163,7 +167,7 @@ function _cua_import_redirects($contents) {
 //    if ($key == 'centerwest') {
 //      break;
 //    }
-    echo "Creating... $key \n";
+    echo "Creating Short URL... $key \n";
 
     $values = [
       'nid' => NULL,
