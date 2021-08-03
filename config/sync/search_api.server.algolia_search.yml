@@ -1,0 +1,14 @@
+uuid: 09907cb8-75ed-419b-9e3c-75f4cae6ce54
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_algolia
+id: algolia_search
+name: 'Algolia Search'
+description: ''
+backend: search_api_algolia
+backend_config:
+  application_id: 46J62SCFGR
+  api_key: cd46820037dfd64054050363b8b47d09
+  disable_truncate: 0

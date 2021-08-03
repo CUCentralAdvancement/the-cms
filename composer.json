@@ -15,6 +15,9 @@
         }
     ],
     "require": {
+        "ext-curl": "*",
+        "ext-json": "*",
+        "algolia/algoliasearch-client-php": "^3.0",
         "cloudinary/cloudinary_php": "^2.3",
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.0",
@@ -29,9 +32,8 @@
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
-        "drush/drush": "^10.5",
-        "ext-json": "*",
-        "ext-curl": "*"
+        "drupal/search_api_algolia": "3.0.0-beta1",
+        "drush/drush": "^10.5"
     },
     "conflict": {
         "drupal/drupal": "*"
