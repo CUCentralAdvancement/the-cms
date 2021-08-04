@@ -1723,7 +1723,7 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.2.2",
+            "version": "9.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1757,6 +1757,7 @@
                     "Drupal\\Composer\\Plugin\\Scaffold\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -1764,7 +1765,11 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ]
+            ],
+            "support": {
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.2.3"
+            },
+            "time": "2021-07-10T22:39:33+00:00"
         },
         {
             "name": "drupal/core-project-message",
