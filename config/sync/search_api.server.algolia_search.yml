@@ -9,6 +9,6 @@ name: 'Algolia Search'
 description: ''
 backend: search_api_algolia
 backend_config:
-  application_id: 46J62SCFGR
-  api_key: cd46820037dfd64054050363b8b47d09
+  application_id: B45UWKIRMU
+  api_key: 524c933e059cf6ce8fc9a29b26dd9f4b
   disable_truncate: 0

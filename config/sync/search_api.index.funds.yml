@@ -1,0 +1,190 @@
+uuid: 93a8bc1a-83a1-48f4-8891-f15aff5d32d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_allocation_code
+    - field.storage.node.body
+    - field.storage.node.field_campus
+    - field.storage.node.field_content_expiration
+    - field.storage.node.field_featured_fund
+    - field.storage.node.field_fund_owners
+    - field.storage.node.field_fund_type
+    - field.storage.node.field_interest
+    - field.storage.node.field_keywords
+    - field.storage.node.field_marketing_content
+    - field.storage.node.field_slug
+    - field.storage.node.field_status
+    - field.storage.node.field_suggested_amount
+    - search_api.server.algolia_search
+  module:
+    - taxonomy
+    - node
+    - search_api
+id: funds
+name: Funds
+description: ''
+read_only: false
+field_settings:
+  allocation_code:
+    label: 'Allocation Code'
+    datasource_id: 'entity:node'
+    property_path: field_allocation_code
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_allocation_code
+  campus:
+    label: Campus
+    datasource_id: 'entity:node'
+    property_path: field_campus
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_campus
+  content_expiration:
+    label: 'Content Expiration'
+    datasource_id: 'entity:node'
+    property_path: field_content_expiration
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_content_expiration
+  description:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  featured_fund:
+    label: 'Featured Fund'
+    datasource_id: 'entity:node'
+    property_path: field_featured_fund
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_featured_fund
+  fund_owners:
+    label: 'Fund Owners'
+    datasource_id: 'entity:node'
+    property_path: field_fund_owners
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_fund_owners
+  fund_type:
+    label: 'Fund Type'
+    datasource_id: 'entity:node'
+    property_path: field_fund_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_fund_type
+  interest:
+    label: Interest
+    datasource_id: 'entity:node'
+    property_path: field_interest
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_interest
+  keywords:
+    label: 'Keywords » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_keywords:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_keywords
+      module:
+        - taxonomy
+  marketing_content:
+    label: 'Marketing Content'
+    datasource_id: 'entity:node'
+    property_path: field_marketing_content
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_marketing_content
+  slug:
+    label: Slug
+    datasource_id: 'entity:node'
+    property_path: field_slug
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_slug
+  status:
+    label: Status
+    datasource_id: 'entity:node'
+    property_path: field_status
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_status
+  suggested_amount:
+    label: 'Suggested Amount'
+    datasource_id: 'entity:node'
+    property_path: field_suggested_amount
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_suggested_amount
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - fund
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  html_filter:
+    all_fields: false
+    fields:
+      - allocation_code
+      - campus
+      - description
+      - fund_owners
+      - fund_type
+      - interest
+      - marketing_content
+      - slug
+      - status
+      - suggested_amount
+      - title
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  language_with_fallback: {  }
+  rendered_item: {  }
+  reverse_entity_references: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: algolia_search

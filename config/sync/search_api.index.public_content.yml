@@ -4,19 +4,10 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_allocation_code
-    - field.storage.node.field_campus
     - field.storage.node.field_category
     - field.storage.node.field_content_stuff
     - field.storage.node.field_detailed_question
-    - field.storage.node.field_featured_fund
-    - field.storage.node.field_fund_type
-    - field.storage.node.field_interest
-    - field.storage.node.field_keywords
-    - field.storage.node.field_marketing_content
     - field.storage.node.field_slug
-    - field.storage.node.field_status
-    - field.storage.node.field_suggested_amount
     - search_api.server.algolia_search
   module:
     - node
@@ -34,22 +25,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
-  field_allocation_code:
-    label: 'Allocation Code'
-    datasource_id: 'entity:node'
-    property_path: field_allocation_code
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_allocation_code
-  field_campus:
-    label: Campus
-    datasource_id: 'entity:node'
-    property_path: field_campus
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_campus
   field_category:
     label: Category
     datasource_id: 'entity:node'
@@ -74,46 +49,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_detailed_question
-  field_featured_fund:
-    label: 'Featured Fund'
-    datasource_id: 'entity:node'
-    property_path: field_featured_fund
-    type: boolean
-    dependencies:
-      config:
-        - field.storage.node.field_featured_fund
-  field_fund_type:
-    label: 'Fund Type'
-    datasource_id: 'entity:node'
-    property_path: field_fund_type
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_fund_type
-  field_interest:
-    label: Interest
-    datasource_id: 'entity:node'
-    property_path: field_interest
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_interest
-  field_keywords:
-    label: Keywords
-    datasource_id: 'entity:node'
-    property_path: field_keywords
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_keywords
-  field_marketing_content:
-    label: 'Marketing Content'
-    datasource_id: 'entity:node'
-    property_path: field_marketing_content
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_marketing_content
   field_slug:
     label: Slug
     datasource_id: 'entity:node'
@@ -122,22 +57,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_slug
-  field_status:
-    label: Status
-    datasource_id: 'entity:node'
-    property_path: field_status
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_status
-  field_suggested_amount:
-    label: 'Suggested Amount'
-    datasource_id: 'entity:node'
-    property_path: field_suggested_amount
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_suggested_amount
   title:
     label: Title
     datasource_id: 'entity:node'
@@ -159,6 +78,7 @@ datasource_settings:
     bundles:
       default: true
       selected:
+        - fund
         - short_url
     languages:
       default: true
@@ -171,16 +91,9 @@ processor_settings:
     all_fields: false
     fields:
       - body
-      - field_allocation_code
-      - field_campus
       - field_category
       - field_detailed_question
-      - field_fund_type
-      - field_interest
-      - field_marketing_content
       - field_slug
-      - field_status
-      - field_suggested_amount
       - title
       - type
     title: true
@@ -204,4 +117,6 @@ tracker_settings:
 options:
   index_directly: true
   cron_limit: 50
+  algolia_index_name: ''
+  algolia_index_list: ''
 server: algolia_search
