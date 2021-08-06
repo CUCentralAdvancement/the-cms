@@ -1,0 +1,29 @@
+uuid: 4b381a2d-7697-4036-a9ad-d31586a7e5a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_listing_item
+    - node.type.fund
+    - paragraphs.paragraphs_type.content_list
+id: paragraph.content_list.field_listing_item
+field_name: field_listing_item
+entity_type: paragraph
+bundle: content_list
+label: 'Listing Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      fund: fund
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 7eb5689f-97a1-45ae-98bd-bf539e1e1609
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styles
+    - paragraphs.paragraphs_type.content_list
+  module:
+    - options
+id: paragraph.content_list.field_styles
+field_name: field_styles
+entity_type: paragraph
+bundle: content_list
+label: Styles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

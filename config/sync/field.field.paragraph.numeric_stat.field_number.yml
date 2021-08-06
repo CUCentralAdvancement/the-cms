@@ -1,0 +1,23 @@
+uuid: 198312a1-4652-49ad-9ac7-4645474ccaf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_number
+    - paragraphs.paragraphs_type.numeric_stat
+id: paragraph.numeric_stat.field_number
+field_name: field_number
+entity_type: paragraph
+bundle: numeric_stat
+label: Number
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

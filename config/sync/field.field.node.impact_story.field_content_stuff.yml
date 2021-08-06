@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.storage.node.field_content_stuff
     - node.type.impact_story
+    - paragraphs.paragraphs_type.content_list
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.layout
+    - paragraphs.paragraphs_type.numeric_stat
     - paragraphs.paragraphs_type.text_block
   module:
     - entity_reference_revisions
@@ -27,14 +29,22 @@ settings:
     target_bundles:
       image: image
       layout: layout
+      content_list: content_list
       text_block: text_block
+      numeric_stat: numeric_stat
     target_bundles_drag_drop:
+      content_list:
+        enabled: true
+        weight: 6
       image:
         enabled: true
         weight: 3
       layout:
         enabled: true
         weight: 4
+      numeric_stat:
+        enabled: true
+        weight: 7
       text_block:
         enabled: true
         weight: 6

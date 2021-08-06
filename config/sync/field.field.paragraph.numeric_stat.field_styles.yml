@@ -1,0 +1,21 @@
+uuid: f87866da-ea27-40a5-b24a-1b40bdd519c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styles
+    - paragraphs.paragraphs_type.numeric_stat
+  module:
+    - options
+id: paragraph.numeric_stat.field_styles
+field_name: field_styles
+entity_type: paragraph
+bundle: numeric_stat
+label: Styles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

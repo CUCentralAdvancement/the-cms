@@ -1,0 +1,29 @@
+uuid: d9881d1e-a0ef-4350-8af8-373a6054dbd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.numeric_stat.field_number
+    - field.field.paragraph.numeric_stat.field_styles
+    - paragraphs.paragraphs_type.numeric_stat
+id: paragraph.numeric_stat.default
+targetEntityType: paragraph
+bundle: numeric_stat
+mode: default
+content:
+  field_number:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_styles:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

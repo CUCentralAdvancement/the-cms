@@ -1,0 +1,10 @@
+uuid: 87752b61-1901-4e5c-a820-faf7a6dd3823
+langcode: en
+status: true
+dependencies: {  }
+id: numeric_stat
+label: 'Numeric Stat'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
