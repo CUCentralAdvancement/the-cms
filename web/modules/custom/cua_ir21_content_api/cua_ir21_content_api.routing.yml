@@ -10,6 +10,6 @@ ci_trigger_run:
   path: '/api/review-apps/{name}/feature/{branch}'
   defaults:
     _title: 'Review Apps'
-    _controller: '\Drupal\cua_ir21_content_api\Controller\CuaIr21ContentAPiController::reviewApps'
+    _controller: '\Drupal\cua_ir21_content_api\Controller\CuaIr21ContentApiController::reviewApps'
   requirements:
     _permission: 'access content'
