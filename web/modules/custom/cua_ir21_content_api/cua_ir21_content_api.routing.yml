@@ -2,7 +2,7 @@ impact_story:
   path: '/api/impact-story/{id}'
   defaults:
     _title: 'Stories'
-    _controller: '\Drupal\cua_ir21_content_api\Controller\CuaIr21ContentAPiController::impacts'
+    _controller: '\Drupal\cua_ir21_content_api\Controller\CuaIr21ContentApiController::impacts'
   requirements:
     _permission: 'access content'
 
