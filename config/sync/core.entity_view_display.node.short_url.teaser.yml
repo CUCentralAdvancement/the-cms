@@ -26,3 +26,4 @@ hidden:
   field_fund_owners: true
   field_url_redirect: true
   field_url_source: true
+  search_api_excerpt: true
