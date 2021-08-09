@@ -10,7 +10,8 @@ module:
   contextual: 0
   ctools: 0
   cua_cloudinary: 0
-  cua_ir20_content_types: 0
+  cua_giving_content_api: 0
+  cua_ir21_content_api: 0
   datetime: 0
   dynamic_page_cache: 0
   editor: 0

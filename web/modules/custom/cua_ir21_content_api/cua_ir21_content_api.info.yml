@@ -1,6 +1,6 @@
-name: CUA IR20 Content Types
+name: CUA IR21 Content API
 type: module
-description: All code related to the IR20 content type UI and API responses.
+description: All code related to the IR21 content type API responses.
 package: Advancement - CU-SYS
 core: 8.x
 core_version_requirement: ^8 || ^9

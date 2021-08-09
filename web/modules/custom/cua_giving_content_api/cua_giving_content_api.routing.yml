@@ -1,0 +1,39 @@
+funds:
+  path: '/api/funds'
+  defaults:
+    _title: 'Funds'
+    _controller: '\Drupal\cua_giving_content_api\Controller\CuaGivingContentApiController::funds'
+  requirements:
+    _permission: 'access content'
+
+fund:
+  path: '/api/funds/{slug}'
+  defaults:
+    _title: 'Fund Detail'
+    _controller: '\Drupal\cua_giving_content_api\Controller\CuaGivingContentApiController::fund'
+  requirements:
+    _permission: 'access content'
+
+faqs:
+  path: '/api/faqs'
+  defaults:
+    _title: 'FAQs'
+    _controller: '\Drupal\cua_giving_content_api\Controller\CuaGivingContentApiController::faqs'
+  requirements:
+    _permission: 'access content'
+
+faq:
+  path: '/api/faqs/{slug}'
+  defaults:
+    _title: 'FAQs Detail'
+    _controller: '\Drupal\cua_giving_content_api\Controller\CuaGivingContentApiController::faq'
+  requirements:
+    _permission: 'access content'
+
+content_paths:
+  path: '/api/paths/{type}'
+  defaults:
+    _title: 'Content Type Paths'
+    _controller: '\Drupal\cua_giving_content_api\Controller\CuaGivingContentApiController::paths'
+  requirements:
+    _permission: 'access content'

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\cua_ir20_content_types\Controller;
+namespace Drupal\cua_ir21_content_api\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 /**
  * Returns responses for CUA IR20 Content Types routes.
  */
-class CuaIr20ContentTypesController extends ControllerBase {
+class CuaIr21ContentApiController extends ControllerBase {
 
   /**
    * @var \Drupal\Core\Entity\EntityStorageInterface
@@ -41,71 +41,6 @@ class CuaIr20ContentTypesController extends ControllerBase {
     $this->file_service = $this->entityTypeManager()->getStorage('file');
     $this->taxonomy_service = $this->entityTypeManager()->getStorage('taxonomy_term');
     $this->paragraph_service = $this->entityTypeManager()->getStorage('paragraph');
-  }
-
-  /**
-   * Builds the response.
-   *
-   * @param string $slug
-   *   Short human-readable name of story.
-   *
-   * @return \Symfony\Component\HttpFoundation\JsonResponse
-   *   Story data in JSON format.
-   *
-   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
-   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
-   */
-  public function fund(string $slug): JsonResponse {
-    $nids = $this->node_service->loadByProperties(['field_slug' => "fund/$slug"]);
-    $data = $this->node_service->load(array_keys($nids)[0]);
-    $node = json_decode($this->serializer->serialize($data, 'json', ['plugin_id' => 'entity']), TRUE);
-
-    // Direct fields.
-    $fund = [];
-    $fund['title'] = $node["title"][0]["value"];
-    $fund['description'] = $node["body"][0]["value"];
-    $fund['campus'] = $node["field_campus"][0]["value"];
-    $fund['slug'] = $node["field_slug"][0]["value"];
-    $fund['interest'] = $node["field_interest"][0]["value"];
-    $fund['allocation_code'] = $node["field_allocation_code"][0]["value"];
-    $fund['suggested_amount'] = $node["field_suggested_amount"][0]["value"];
-    $fund['marketing_content'] = $node["field_marketing_content"][0]["value"];
-    $fund['created_at'] = $node["created"][0]["value"];
-    $fund['updated_at'] = $node["changed"][0]["value"];
-    $fund['fund_type'] = $node["field_fund_type"][0]["value"];
-
-    // Keywords.
-    $keywords = [];
-    if (isset($node["field_keywords"])) {
-      foreach ($node["field_keywords"] as $keyword_data) {
-        $term = $this->taxonomy_service->load($keyword_data["target_id"]);
-        $term_data = json_decode($this->serializer->serialize($term, 'json', ['plugin_id' => 'taxonomy']), TRUE);
-        $keywords[] = $term_data["name"][0]["value"];
-      }
-    }
-    $fund['keywords'] = implode(',', $keywords);
-
-    return new JsonResponse($fund);
-  }
-
-  /**
-   * Dd.
-   *
-   * @return \Symfony\Component\HttpFoundation\JsonResponse
-   *   List of stories as data in JSON format.
-   *
-   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
-   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
-   */
-  public function funds(): JsonResponse {
-    $nids = \Drupal::entityQuery('node')
-      ->condition('status', 1)
-      ->condition('type', 'fund')
-      ->execute();
-    $nodes = $this->node_service->loadMultiple($nids);
-    $data = json_decode($this->serializer->serialize($nodes, 'json', ['plugin_id' => 'entity']), TRUE);
-
-    return new JsonResponse($data);
   }
 
   /**

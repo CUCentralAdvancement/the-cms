@@ -1,0 +1,15 @@
+impact_story:
+  path: '/api/impact-story/{id}'
+  defaults:
+    _title: 'Stories'
+    _controller: '\Drupal\cua_ir21_content_api\Controller\CuaIr21ContentAPiController::impacts'
+  requirements:
+    _permission: 'access content'
+
+ci_trigger_run:
+  path: '/api/review-apps/{name}/feature/{branch}'
+  defaults:
+    _title: 'Review Apps'
+    _controller: '\Drupal\cua_ir21_content_api\Controller\CuaIr21ContentAPiController::reviewApps'
+  requirements:
+    _permission: 'access content'
