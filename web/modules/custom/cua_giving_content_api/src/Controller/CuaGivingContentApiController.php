@@ -182,7 +182,7 @@ class CuaGivingContentApiController extends ControllerBase {
 
     $paths = [];
     foreach ($data as $node) {
-      $paths[] = explode('/', $node["field_slug"][0]["value"])[1];
+      $paths[] = $node["field_slug"][0]["value"];
     }
 
     return new JsonResponse($paths);

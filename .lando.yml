@@ -8,9 +8,9 @@ config:
   via: apache
   database: postgres
 services:
-#  appserver:
-#    build:
-#      - composer install
+  appserver:
+    build:
+      - composer install
 #  postgres:
 #    type: postgres:12
 #    portforward: true
