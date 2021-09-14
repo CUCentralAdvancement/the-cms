@@ -5,7 +5,6 @@
         ' .image-widget-data .file--image a');
 
       if (typeof imageLinkNode !== 'undefined') {
-        console.log('Main images');
         var url = imageLinkNode.getAttribute('href');
         document.querySelector('.form-item-field-image-main-0 .image-style-thumbnail').setAttribute('src', url);
         document.querySelector('.form-item-field-image-main-0' +
