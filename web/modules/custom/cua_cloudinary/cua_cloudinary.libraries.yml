@@ -1,0 +1,14 @@
+cua_cl_main_image:
+  version: 1.x
+  js:
+    js/main-image.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+cua_cl_lp_images:
+  version: 1.x
+  js:
+    js/lp-images.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

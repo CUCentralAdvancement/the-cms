@@ -1,0 +1,21 @@
+uuid: f1edf877-80a2-477f-b3c1-ad2137e60931
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.block_quote
+  module:
+    - text
+id: paragraph.block_quote.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: block_quote
+label: Quote
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

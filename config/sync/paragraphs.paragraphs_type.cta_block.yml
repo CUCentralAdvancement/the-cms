@@ -1,0 +1,10 @@
+uuid: f01be532-12c5-4479-bdeb-534b1e55d7c6
+langcode: en
+status: true
+dependencies: {  }
+id: cta_block
+label: 'CTA Block'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

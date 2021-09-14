@@ -1,0 +1,23 @@
+uuid: 44258a14-c820-4b82-a51e-71e691782b07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_links.field_services
+    - paragraphs.paragraphs_type.social_links
+  module:
+    - options
+id: paragraph.social_links.default
+targetEntityType: paragraph
+bundle: social_links
+mode: default
+content:
+  field_services:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  search_api_excerpt: true

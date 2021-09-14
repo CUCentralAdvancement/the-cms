@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.content_list.field_listing_item
+    - field.field.paragraph.content_list.field_short_text
     - field.field.paragraph.content_list.field_styles
     - paragraphs.paragraphs_type.content_list
 id: paragraph.content_list.default
@@ -20,6 +21,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_short_text:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_styles:
     weight: 1

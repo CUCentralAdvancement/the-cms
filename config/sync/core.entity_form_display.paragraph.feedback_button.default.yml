@@ -1,0 +1,21 @@
+uuid: 5a1a69c4-1e0e-421e-a51e-d1486dc2c21e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.feedback_button.field_feedback_action
+    - paragraphs.paragraphs_type.feedback_button
+id: paragraph.feedback_button.default
+targetEntityType: paragraph
+bundle: feedback_button
+mode: default
+content:
+  field_feedback_action:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+hidden:
+  created: true
+  status: true

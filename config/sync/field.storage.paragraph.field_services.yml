@@ -1,28 +1,25 @@
-uuid: d0525124-bd0f-4783-8c61-0f8288537a8a
+uuid: db89cc29-cf0d-477c-ba4d-0c613c001cb1
 langcode: en
 status: true
 dependencies:
   module:
     - options
     - paragraphs
-id: paragraph.field_styles
-field_name: field_styles
+id: paragraph.field_services
+field_name: field_services
 entity_type: paragraph
 type: list_string
 settings:
   allowed_values:
     -
-      value: with-caption
-      label: with-caption
+      value: twitter
+      label: Twitter
     -
-      value: block-quote
-      label: block-quote
+      value: facebook
+      label: Facebook
     -
-      value: white-background
-      label: white-background
-    -
-      value: rounded
-      label: rounded
+      value: instagram
+      label: Instagram
   allowed_values_function: ''
 module: options
 locked: false

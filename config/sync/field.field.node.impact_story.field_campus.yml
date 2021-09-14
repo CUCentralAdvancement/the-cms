@@ -1,0 +1,21 @@
+uuid: e4861c38-c1f2-43ab-905e-915043496ca7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_campus
+    - node.type.impact_story
+  module:
+    - options
+id: node.impact_story.field_campus
+field_name: field_campus
+entity_type: node
+bundle: impact_story
+label: Campus
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

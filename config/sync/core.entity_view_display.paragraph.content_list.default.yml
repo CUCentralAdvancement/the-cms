@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.content_list.field_listing_item
+    - field.field.paragraph.content_list.field_short_text
     - field.field.paragraph.content_list.field_styles
     - paragraphs.paragraphs_type.content_list
   module:
@@ -20,6 +21,14 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_short_text:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_styles:
     weight: 1

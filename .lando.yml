@@ -11,6 +11,8 @@ services:
   appserver:
     build:
       - composer install
+    config:
+      php: config/php.ini
 #  postgres:
 #    type: postgres:12
 #    portforward: true

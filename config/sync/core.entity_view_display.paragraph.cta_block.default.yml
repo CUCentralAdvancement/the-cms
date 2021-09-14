@@ -1,0 +1,46 @@
+uuid: 0b18b29a-a091-4e2d-ad98-7ad7ce36ebb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta_block.field_content
+    - field.field.paragraph.cta_block.field_link
+    - field.field.paragraph.cta_block.field_short_text
+    - paragraphs.paragraphs_type.cta_block
+  module:
+    - link
+    - text
+id: paragraph.cta_block.default
+targetEntityType: paragraph
+bundle: cta_block
+mode: default
+content:
+  field_content:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_link:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_short_text:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

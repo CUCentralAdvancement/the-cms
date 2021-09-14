@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.numeric_stat.field_number
+    - field.field.paragraph.numeric_stat.field_short_text
     - field.field.paragraph.numeric_stat.field_styles
     - paragraphs.paragraphs_type.numeric_stat
 id: paragraph.numeric_stat.default
@@ -17,6 +18,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_short_text:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_styles:
     weight: 0

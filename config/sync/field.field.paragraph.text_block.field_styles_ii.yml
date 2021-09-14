@@ -1,0 +1,29 @@
+uuid: e712fe2a-e402-4492-a805-727698e2c876
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styles_ii
+    - paragraphs.paragraphs_type.text_block
+    - taxonomy.vocabulary.styles
+id: paragraph.text_block.field_styles_ii
+field_name: field_styles_ii
+entity_type: paragraph
+bundle: text_block
+label: 'Styles II'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      styles: styles
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

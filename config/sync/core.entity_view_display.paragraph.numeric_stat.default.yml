@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.numeric_stat.field_number
+    - field.field.paragraph.numeric_stat.field_short_text
     - field.field.paragraph.numeric_stat.field_styles
     - paragraphs.paragraphs_type.numeric_stat
   module:
@@ -21,6 +22,14 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
+    region: content
+  field_short_text:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_styles:
     weight: 0

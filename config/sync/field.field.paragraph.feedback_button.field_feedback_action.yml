@@ -1,0 +1,23 @@
+uuid: bc93d55d-1981-4514-b050-4f6032dc8cc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_feedback_action
+    - paragraphs.paragraphs_type.feedback_button
+  module:
+    - options
+id: paragraph.feedback_button.field_feedback_action
+field_name: field_feedback_action
+entity_type: paragraph
+bundle: feedback_button
+label: 'Feedback Action'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: like
+default_value_callback: ''
+settings: {  }
+field_type: list_string

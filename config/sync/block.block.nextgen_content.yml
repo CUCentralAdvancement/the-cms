@@ -1,0 +1,22 @@
+uuid: 72504fc0-9a6e-4d40-870f-7fe2b1fe327f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nextgen
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: nextgen_content
+theme: nextgen
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
