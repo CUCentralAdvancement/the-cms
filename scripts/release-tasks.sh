@@ -30,7 +30,7 @@ fi
   cp /app/scripts/templates/.htaccess /app/web/sites/default/files
 
   echo "Importing any config changes..."
-#  /app/vendor/bin/drush cim -y
+  /app/vendor/bin/drush cim -y
 
   echo "Clearing cache..."
   /app/vendor/bin/drush cr
