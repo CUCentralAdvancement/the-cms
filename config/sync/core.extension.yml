@@ -13,7 +13,6 @@ module:
   cua_giving_content_api: 0
   cua_ir21_content_api: 0
   cua_seed_content: 0
-  cua_terbow: 0
   datetime: 0
   dynamic_page_cache: 0
   editor: 0
@@ -58,7 +57,6 @@ theme:
   seven: 0
   stable: 0
   classy: 0
-  nextgen: 0
 profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
