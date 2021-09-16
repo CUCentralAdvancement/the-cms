@@ -1,0 +1,28 @@
+build_mode: development
+runtime: null
+renderer: null
+projects: {  }
+defaults:
+  library:
+    header: false
+    dependencies: {  }
+    optimization:
+      merge_chunks: true
+      preprocess: true
+      minify: false
+      defer: false
+      async: false
+  attach:
+    everywhere: false
+    non_admin: false
+    path: ''
+    theme: null
+  ssr:
+    entrypoint: null
+overrides: {  }
+tweaks:
+  disable_active_link: false
+  disable_system_base: false
+  disable_contextual_links: false
+_core:
+  default_config_hash: pnb17OlqdFG-oDaP8x_CV5v-s0VQ8ZlAmfJIQ00p9Ls

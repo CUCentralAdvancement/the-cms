@@ -5,10 +5,14 @@ dependencies:
   config:
     - field.storage.node.field_content_stuff
     - node.type.impact_story
+    - paragraphs.paragraphs_type.block_quote
     - paragraphs.paragraphs_type.content_list
+    - paragraphs.paragraphs_type.cta_block
+    - paragraphs.paragraphs_type.feedback_button
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.layout
     - paragraphs.paragraphs_type.numeric_stat
+    - paragraphs.paragraphs_type.social_links
     - paragraphs.paragraphs_type.text_block
   module:
     - entity_reference_revisions
@@ -32,10 +36,23 @@ settings:
       content_list: content_list
       text_block: text_block
       numeric_stat: numeric_stat
+      block_quote: block_quote
+      cta_block: cta_block
+      feedback_button: feedback_button
+      social_links: social_links
     target_bundles_drag_drop:
+      block_quote:
+        enabled: true
+        weight: 8
       content_list:
         enabled: true
         weight: 6
+      cta_block:
+        enabled: true
+        weight: 8
+      feedback_button:
+        enabled: true
+        weight: 13
       image:
         enabled: true
         weight: 3
@@ -45,6 +62,9 @@ settings:
       numeric_stat:
         enabled: true
         weight: 7
+      social_links:
+        enabled: true
+        weight: 15
       text_block:
         enabled: true
         weight: 6

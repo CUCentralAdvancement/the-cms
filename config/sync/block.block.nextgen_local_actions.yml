@@ -1,0 +1,20 @@
+uuid: 54cc4b5d-b603-4abd-954f-9c48ffffa1e4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nextgen
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: nextgen_local_actions
+theme: nextgen
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -16,9 +16,6 @@
       "url": "https://github.com/heroku/heroku-buildpack-php"
     },
     {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
-    },
-    {
       "url": "https://github.com/heroku/heroku-buildpack-cli"
     }
   ]

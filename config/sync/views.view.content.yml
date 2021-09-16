@@ -7,6 +7,7 @@ dependencies:
     - node.type.fund
     - node.type.impact_story
     - node.type.page
+    - node.type.short_url
   module:
     - node
     - user
@@ -423,10 +424,12 @@ display:
           admin_label: ''
           operator: in
           value:
+            all: all
             faq: faq
             fund: fund
             impact_story: impact_story
             page: page
+            short_url: short_url
           group: 1
           exposed: true
           expose:
@@ -439,7 +442,7 @@ display:
             operator_list: {  }
             identifier: type
             required: false
-            remember: false
+            remember: true
             multiple: false
             remember_roles:
               authenticated: authenticated

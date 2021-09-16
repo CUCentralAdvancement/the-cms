@@ -1,17 +1,17 @@
-uuid: e2200d5c-aaf2-42ec-ae34-108125351e4a
+uuid: d6fe9086-1701-48a8-b9b5-6ccb08904f37
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image
-    - paragraphs.paragraphs_type.image
+    - field.storage.node.field_image_main
+    - node.type.impact_story
   module:
     - image
-id: paragraph.image.field_image
-field_name: field_image
-entity_type: paragraph
-bundle: image
-label: Image
+id: node.impact_story.field_image_main
+field_name: field_image_main
+entity_type: node
+bundle: impact_story
+label: 'Image Main'
 description: ''
 required: false
 translatable: false

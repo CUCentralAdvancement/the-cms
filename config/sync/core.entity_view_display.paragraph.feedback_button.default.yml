@@ -1,0 +1,23 @@
+uuid: 9fd8142f-51da-499d-9d47-fff9deb2d2c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.feedback_button.field_feedback_action
+    - paragraphs.paragraphs_type.feedback_button
+  module:
+    - options
+id: paragraph.feedback_button.default
+targetEntityType: paragraph
+bundle: feedback_button
+mode: default
+content:
+  field_feedback_action:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  search_api_excerpt: true

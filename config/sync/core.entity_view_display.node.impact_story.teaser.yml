@@ -5,7 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.impact_story.body
+    - field.field.node.impact_story.field_campus
     - field.field.node.impact_story.field_content_stuff
+    - field.field.node.impact_story.field_image_main
+    - field.field.node.impact_story.field_related_stories_2
     - field.field.node.impact_story.field_slug
     - field.field.node.impact_story.layout_builder__layout
     - node.type.impact_story
@@ -31,7 +34,10 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_campus: true
   field_content_stuff: true
+  field_image_main: true
+  field_related_stories_2: true
   field_slug: true
   layout_builder__layout: true
   search_api_excerpt: true

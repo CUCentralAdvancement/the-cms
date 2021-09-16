@@ -18,8 +18,10 @@ use Drupal\file\Entity\File;
 function cua_cloudinary_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   if (in_array($form_id, ['node_impact_story_edit_form',
     'node_impact_story_form'])) {
-//    $form["field_story_image_card"]["widget"][0]["#upload_validators"]['cua_cloudinary_validate_name'] = [];
     $form["field_image_main"]["widget"][0]["#upload_validators"]['cua_cloudinary_validate_name'] = [];
+
+    // Add library to replace thumbnail image with regular from Cloudinary.
+    $form['#attached']['library'][] = 'cua_cloudinary/cua_cl_main_image';
   }
 
   if ($form_id === 'editor_image_dialog') {
@@ -38,4 +40,15 @@ function cua_cloudinary_validate_name(File $file): void {
   $new_name = time() . '-' . $name;
   $file->setFilename($new_name);
   $file->destination = str_replace($name, $new_name, $file->destination);
+}
+
+
+/**
+ * Implements hook_layout_paragraph_element_form_alter().
+ */
+function cua_cloudinary_layout_paragraph_element_form_alter(array &$element_form, FormStateInterface &$element_form_state, array $parent_form) {
+  // Add library to replace thumbnail image with regular from Cloudinary.
+  $element_form['#attached']['library'][] = 'cua_cloudinary/cua_cl_lp_images';
+
+  $element_form["field_image"]["widget"][0]["#upload_validators"]['cua_cloudinary_validate_name'] = [];
 }

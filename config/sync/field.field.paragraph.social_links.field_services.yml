@@ -1,0 +1,21 @@
+uuid: dd759c6f-8fbf-4ffd-abe7-3cb373862fa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_services
+    - paragraphs.paragraphs_type.social_links
+  module:
+    - options
+id: paragraph.social_links.field_services
+field_name: field_services
+entity_type: paragraph
+bundle: social_links
+label: Services
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

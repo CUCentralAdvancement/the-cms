@@ -1,0 +1,21 @@
+uuid: dc59127d-2fc8-4b02-b5ae-68432b3e26c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_links.field_services
+    - paragraphs.paragraphs_type.social_links
+id: paragraph.social_links.default
+targetEntityType: paragraph
+bundle: social_links
+mode: default
+content:
+  field_services:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+hidden:
+  created: true
+  status: true
