@@ -1,0 +1,21 @@
+uuid: f2ddf45f-553a-4722-a3c1-22798809aad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styles
+    - paragraphs.paragraphs_type.social_links
+  module:
+    - options
+id: paragraph.social_links.field_styles
+field_name: field_styles
+entity_type: paragraph
+bundle: social_links
+label: Styles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

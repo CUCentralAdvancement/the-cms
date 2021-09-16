@@ -1,0 +1,21 @@
+uuid: 865e891e-de44-4560-8d0f-eb4d9191b840
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styles
+    - paragraphs.paragraphs_type.block_quote
+  module:
+    - options
+id: paragraph.block_quote.field_styles
+field_name: field_styles
+entity_type: paragraph
+bundle: block_quote
+label: Styles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

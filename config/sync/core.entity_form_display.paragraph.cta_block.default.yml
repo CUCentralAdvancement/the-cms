@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.cta_block.field_content
     - field.field.paragraph.cta_block.field_link
     - field.field.paragraph.cta_block.field_short_text
+    - field.field.paragraph.cta_block.field_styles
     - paragraphs.paragraphs_type.cta_block
   module:
     - link
@@ -38,6 +39,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_styles:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true

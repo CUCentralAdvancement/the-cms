@@ -1,0 +1,21 @@
+uuid: 63642fbc-8abc-4281-909c-c6337977b400
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styles
+    - paragraphs.paragraphs_type.feedback_button
+  module:
+    - options
+id: paragraph.feedback_button.field_styles
+field_name: field_styles
+entity_type: paragraph
+bundle: feedback_button
+label: Styles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.feedback_button.field_feedback_action
+    - field.field.paragraph.feedback_button.field_styles
     - paragraphs.paragraphs_type.feedback_button
 id: paragraph.feedback_button.default
 targetEntityType: paragraph
@@ -15,6 +16,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_styles:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true

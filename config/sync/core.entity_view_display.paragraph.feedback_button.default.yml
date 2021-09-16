@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.feedback_button.field_feedback_action
+    - field.field.paragraph.feedback_button.field_styles
     - paragraphs.paragraphs_type.feedback_button
   module:
     - options
@@ -14,6 +15,13 @@ mode: default
 content:
   field_feedback_action:
     weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_styles:
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
