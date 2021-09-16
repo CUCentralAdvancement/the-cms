@@ -50,7 +50,6 @@ module:
   pathauto: 1
   views: 10
   paragraphs: 11
-  entrypoints: 20
   minimal: 1000
 theme:
   bartik: 0
