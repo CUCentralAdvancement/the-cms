@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac67597e1a432a347b8b65c08a507afc",
+    "content-hash": "f6c22c4a11b65101b99eec992af1e251",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1791,7 +1791,7 @@
         },
         {
             "name": "drupal/core-project-message",
-            "version": "9.2.4",
+            "version": "9.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -1826,7 +1826,7 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/9.2.4"
+                "source": "https://github.com/drupal/core-project-message/tree/9.2.6"
             },
             "time": "2020-09-14T13:40:36+00:00"
         },
@@ -7765,7 +7765,8 @@
     "prefer-lowest": false,
     "platform": {
         "ext-curl": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "php": "~7.4.0"
     },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
