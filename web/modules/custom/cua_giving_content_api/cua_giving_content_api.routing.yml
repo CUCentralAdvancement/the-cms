@@ -1,4 +1,4 @@
-funds:
+cua_gc.funds:
   path: '/api/funds'
   defaults:
     _title: 'Funds'
@@ -6,7 +6,7 @@ funds:
   requirements:
     _permission: 'access content'
 
-fund:
+cua_gc.fund:
   path: '/api/funds/{slug}'
   defaults:
     _title: 'Fund Detail'
@@ -14,7 +14,7 @@ fund:
   requirements:
     _permission: 'access content'
 
-faqs:
+cua_gc.faqs:
   path: '/api/faqs'
   defaults:
     _title: 'FAQs'
@@ -22,7 +22,7 @@ faqs:
   requirements:
     _permission: 'access content'
 
-faq:
+cua_gc.faq:
   path: '/api/faqs/{slug}'
   defaults:
     _title: 'FAQs Detail'
@@ -30,10 +30,19 @@ faq:
   requirements:
     _permission: 'access content'
 
-content_paths:
+cua_gc.content_paths:
   path: '/api/paths/{type}'
   defaults:
     _title: 'Content Type Paths'
     _controller: '\Drupal\cua_giving_content_api\Controller\CuaGivingContentApiController::paths'
   requirements:
     _permission: 'access content'
+
+cua_gc.flush_cache:
+  path: '/admin/flushed'
+  defaults:
+    _controller: '\Drupal\cua_giving_content_api\Controller\CuaGivingContentApiController::flushAll'
+    _title: 'Flush all caches'
+  requirements:
+    _permission: 'create impact_story content'
+#    _csrf_token: 'TRUE'

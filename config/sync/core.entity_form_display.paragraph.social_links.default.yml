@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.social_links.field_services
+    - field.field.paragraph.social_links.field_styles
     - paragraphs.paragraphs_type.social_links
 id: paragraph.social_links.default
 targetEntityType: paragraph
@@ -15,6 +16,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_styles:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true

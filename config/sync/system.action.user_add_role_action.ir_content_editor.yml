@@ -1,0 +1,14 @@
+uuid: 0ef32f86-cff3-419e-ae11-4239f0627880
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ir_content_editor
+  module:
+    - user
+id: user_add_role_action.ir_content_editor
+label: 'Add the IR Content Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ir_content_editor

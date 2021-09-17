@@ -31,9 +31,9 @@ tooling:
     service: appserver
     env:
       DRUSH_OPTIONS_URI: "https://the-cms.lndo.site"
-#excludes:
-#  - vendor
-#  - web/core
-#  - web/private
+excludes:
+  - vendor
+  - web/core
+  - web/private
 env_file:
   - .env

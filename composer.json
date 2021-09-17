@@ -15,9 +15,9 @@
         }
     ],
     "require": {
+        "php": "~7.4.0",
         "ext-curl": "*",
         "ext-json": "*",
-        "php": "~7.4.0",
         "algolia/algoliasearch-client-php": "^3.0",
         "cloudinary/cloudinary_php": "^2.3",
         "composer/installers": "^1.9",
@@ -25,6 +25,7 @@
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
+        "drupal/devel": "^4.1",
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/jsonapi_extras": "^3.19",
         "drupal/layout_builder_modal": "^1.1",

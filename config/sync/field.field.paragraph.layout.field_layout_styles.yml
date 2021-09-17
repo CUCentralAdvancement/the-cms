@@ -1,0 +1,23 @@
+uuid: 26f6d2e6-2776-4cd4-a5b6-a834faad86a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_styles
+    - paragraphs.paragraphs_type.layout
+  module:
+    - options
+id: paragraph.layout.field_layout_styles
+field_name: field_layout_styles
+entity_type: paragraph
+bundle: layout
+label: layout_styles
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: max-w-screen-lg
+default_value_callback: ''
+settings: {  }
+field_type: list_string

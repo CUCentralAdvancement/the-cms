@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.block_quote.field_content
+    - field.field.paragraph.block_quote.field_styles
     - paragraphs.paragraphs_type.block_quote
   module:
     - text
@@ -19,6 +20,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_styles:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true

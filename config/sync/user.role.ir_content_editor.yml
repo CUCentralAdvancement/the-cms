@@ -1,0 +1,24 @@
+uuid: bbf68f81-4f72-4397-b5de-3084d1330a16
+langcode: en
+status: true
+dependencies: {  }
+id: ir_content_editor
+label: 'IR Content Editor'
+weight: 3
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'change own username'
+  - 'create impact_story content'
+  - 'customize shortcut links'
+  - 'delete any impact_story content'
+  - 'delete impact_story revisions'
+  - 'delete own impact_story content'
+  - 'edit any impact_story content'
+  - 'edit own impact_story content'
+  - 'revert impact_story revisions'
+  - 'view impact_story revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

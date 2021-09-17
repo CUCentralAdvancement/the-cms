@@ -1,0 +1,39 @@
+uuid: 4ef3e3e3-98a3-4f63-821c-e28f0d40c50b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_layout_styles
+field_name: field_layout_styles
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: max-w-screen-lg
+      label: max-w-screen-lg
+    -
+      value: max-w-screen-sm
+      label: max-w-screen-sm
+    -
+      value: max-w-screen-xs
+      label: max-w-screen-xs
+    -
+      value: text-center
+      label: text-center
+    -
+      value: bg-white
+      label: bg-white
+    -
+      value: rounded-md
+      label: rounded-md
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

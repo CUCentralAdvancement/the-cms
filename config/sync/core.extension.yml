@@ -12,7 +12,6 @@ module:
   cua_cloudinary: 0
   cua_giving_content_api: 0
   cua_ir21_content_api: 0
-  cua_seed_content: 0
   datetime: 0
   dynamic_page_cache: 0
   editor: 0

@@ -1,0 +1,23 @@
+uuid: 2fa1517d-0891-4fce-9865-92b7e504acb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.layout.field_layout_styles
+    - paragraphs.paragraphs_type.layout
+  module:
+    - options
+id: paragraph.layout.default
+targetEntityType: paragraph
+bundle: layout
+mode: default
+content:
+  field_layout_styles:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  search_api_excerpt: true
