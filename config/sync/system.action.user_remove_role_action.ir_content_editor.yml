@@ -1,0 +1,14 @@
+uuid: 90194d47-d21e-4d3d-8b6c-b43cdc7aa39a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ir_content_editor
+  module:
+    - user
+id: user_remove_role_action.ir_content_editor
+label: 'Remove the IR Content Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ir_content_editor

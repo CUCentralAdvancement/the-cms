@@ -15,9 +15,6 @@ settings:
       value: with-caption
       label: with-caption
     -
-      value: block-quote
-      label: block-quote
-    -
       value: white-background
       label: white-background
     -

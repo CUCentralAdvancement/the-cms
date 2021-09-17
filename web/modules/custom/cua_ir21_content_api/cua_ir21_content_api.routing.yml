@@ -1,4 +1,4 @@
-impact_story:
+cua_ir.impact_story:
   path: '/api/impact-story/{slug}'
   defaults:
     _title: 'Stories'
@@ -6,7 +6,7 @@ impact_story:
   requirements:
     _permission: 'access content'
 
-ci_trigger_run:
+cua_ir.ci_trigger_run:
   path: '/api/review-apps/{name}/feature/{branch}'
   defaults:
     _title: 'Review Apps'

@@ -3,7 +3,12 @@
 namespace Drupal\cua_giving_content_api\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Entity\EntityStorageInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\Serializer\SerializerInterface;
 
 /**
  * Returns responses for cua_giving_content_api routes.
@@ -13,34 +18,35 @@ class CuaGivingContentApiController extends ControllerBase {
   /**
    * @var \Drupal\Core\Entity\EntityStorageInterface
    */
-  private $node_service;
-
-  /**
-   * @var mixed
-   */
-  private $serializer;
+  private EntityStorageInterface $node_service;
 
   /**
    * @var \Drupal\Core\Entity\EntityStorageInterface
    */
-  private $file_service;
+  private EntityStorageInterface $taxonomy_service;
 
   /**
-   * @var \Drupal\Core\Entity\EntityStorageInterface
+   * @var \Symfony\Component\HttpFoundation\RequestStack
    */
-  private $taxonomy_service;
+  private RequestStack $request_stack;
 
   /**
-   * @var \Drupal\Core\Entity\EntityStorageInterface
+   * @var \Symfony\Component\Serializer\SerializerInterface
    */
-  private $paragraph_service;
+  private SerializerInterface $serializer;
 
-  public function __construct() {
-    $this->serializer = \Drupal::service('serializer');
+  public function __construct(RequestStack $request_stack, SerializerInterface $serializer) {
+    $this->serializer = $serializer;
     $this->node_service = $this->entityTypeManager()->getStorage('node');
-    $this->file_service = $this->entityTypeManager()->getStorage('file');
     $this->taxonomy_service = $this->entityTypeManager()->getStorage('taxonomy_term');
-    $this->paragraph_service = $this->entityTypeManager()->getStorage('paragraph');
+    $this->request_stack = $request_stack;
+  }
+
+  public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('request_stack'),
+      $container->get('serializer'),
+    );
   }
 
   /**
@@ -186,6 +192,28 @@ class CuaGivingContentApiController extends ControllerBase {
     }
 
     return new JsonResponse($paths);
+  }
+
+  /**
+   * Flushes all caches.
+   */
+  public function flushAll() {
+    $this->messenger()->addMessage($this->t('All caches cleared.'));
+    drupal_flush_all_caches();
+    return new RedirectResponse($this->reloadPage());
+  }
+
+  /**
+   * Reload the previous page.
+   */
+  public function reloadPage() {
+    $request = $this->request_stack->getCurrentRequest();
+    if ($request->server->get('HTTP_REFERER')) {
+      return $request->server->get('HTTP_REFERER');
+    }
+    else {
+      return base_path();
+    }
   }
 
 }

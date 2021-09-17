@@ -89,23 +89,10 @@ class CuaIr21ContentApiController extends ControllerBase {
    */
   public function impacts(string $slug): JsonResponse {
     $node = $this->getNodeBySlug($slug);
-
-    // Image Main.
-    $file = $this->file_service->load($node["field_image_main"][0]["target_id"]);
-    $file_stuff = json_decode($this->serializer->serialize($file, 'json',
-      ['plugin_id' => 'file']), TRUE);
-    $main_image = [
-      'alt' => $node["field_image_main"][0]["alt"],
-      'caption' => $node["field_image_main"][0]["title"],
-      'width' => $node["field_image_main"][0]["width"],
-      'height' => $node["field_image_main"][0]["height"],
-      'url' => $file_stuff["uri"][0]["url"],
-    ];
-
     $result = [
       'title' => $node["title"][0]["value"],
       'body' => $node["body"][0]["value"],
-      'main_image' => $main_image,
+      'main_image' => $this->getImageContent($node["field_image_main"][0]),
       'layout' => $this->getLayout($this->getParagraphs($node["field_content_stuff"])),
       // 'layout' => $this->getOneColumnLayout($this->getParagraphs($node["field_content_stuff"])),
       'related_stories' => $this->getRelatedStories($node['field_related_stories_2']),
@@ -118,10 +105,12 @@ class CuaIr21ContentApiController extends ControllerBase {
     $section_number = 0;
     $layout_type = '';
     foreach ($paragraphs as $par) {
+      // If on a "layout paragraph", set a new section.
       if ($par["behavior_settings"][0]["value"]["layout_paragraphs"]["layout"] !== '') {
         $this->setSections($section_number, $layout_type, $layout, $par);
       }
 
+      // Otherwise, get content per paragraph type.
       if ($par["behavior_settings"][0]["value"]["layout_paragraphs"]["region"] !== '') {
         $content = [];
         switch ($par["type"][0]["target_id"]) {
@@ -150,15 +139,15 @@ class CuaIr21ContentApiController extends ControllerBase {
             $content = $this->getContentList($par);
             break;
         }
-        $content['styles'] = $this->getStyles($par["field_styles"] ?? []);
+        $content['styles'] = $this->getStyles($par["field_styles"] ?? [], null);
 
+        // Set content into proper layout sections.
         if ($layout_type === 'layout_onecol') {
           $layout['sections'][$layout_type . '_' . $section_number]['content'][] = $content;
         }
         else {
           $layout['sections'][$layout_type . '_' . $section_number]['content'][$par["behavior_settings"][0]["value"]["layout_paragraphs"]["region"]][] = $content;
         }
-
       }
     }
     return $layout;
@@ -170,7 +159,6 @@ class CuaIr21ContentApiController extends ControllerBase {
       $data = $this->node_service->load($item['target_id']);
       $node = json_decode($this->serializer->serialize($data, 'json',
         ['plugin_id' => 'entity']), TRUE);
-
       $content[] = [
         'title' => $node['title'][0]['value'],
         'path' => $item['url'],
@@ -261,15 +249,17 @@ class CuaIr21ContentApiController extends ControllerBase {
 
   private function setSections(int &$section_number, string &$layout_type, array &$layout, array $par) {
     $section_number++;
-    $widths = $par["behavior_settings"][0]["value"]["layout_paragraphs"]["config"]["column_widths"];
-    $styles = $par["behavior_settings"][0]["value"]["layout_paragraphs"]["config"]["label"] ?? '';
+    $widths = $par["behavior_settings"][0]["value"]["layout_paragraphs"]["config"]["column_widths"] ?? '100';
+    $styles = $this->getStyles($par["field_layout_styles"], function($el) {
+      return implode(' ', $el);
+    }) ?? '';
 
     switch ($par["behavior_settings"][0]["value"]["layout_paragraphs"]["layout"]) {
       case 'layout_onecol':
         $layout_type = 'layout_onecol';
         $layout['sections']["layout_onecol_$section_number"] = [
           'content' => [],
-          'column_widths' => '100',
+          'column_widths' => $widths,
           'type' => 'one-column',
           'styles' => $styles,
         ];
@@ -324,10 +314,11 @@ class CuaIr21ContentApiController extends ControllerBase {
     }, $field_content_stuff);
   }
 
-  private function getStyles(array $field_styles = []): array {
-    return array_map(function ($style) {
+  private function getStyles(array $field_styles, $formatter) {
+    $the_styles =  array_map(function ($style) {
       return $style['value'];
     }, $field_styles);
+    return $formatter !== null ? call_user_func($formatter, $the_styles) : $the_styles;
   }
 
   private function getNodeBySlug($slug): array {
@@ -357,7 +348,6 @@ class CuaIr21ContentApiController extends ControllerBase {
     }
   }
 
-
   private function getOneColumnLayout(array $paragraphs): array {
     $layout = [];
     foreach ($paragraphs as $par) {
@@ -370,7 +360,7 @@ class CuaIr21ContentApiController extends ControllerBase {
           $content = $this->getParagraphImageContent($par["field_image"]);
           break;
       }
-      $content['styles'] = $this->getStyles($par["field_styles"]);
+      $content['styles'] = $this->getStyles($par["field_styles"], null);
       $layout[] = $content;
     }
     return $layout;
