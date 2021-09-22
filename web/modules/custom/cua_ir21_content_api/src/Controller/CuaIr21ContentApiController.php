@@ -91,6 +91,7 @@ class CuaIr21ContentApiController extends ControllerBase {
     $node = $this->getNodeBySlug($slug);
     $result = [
       'title' => $node["title"][0]["value"],
+      'slug' => $node["field_slug"][0]["value"],
       'body' => $node["body"][0]["value"],
       'main_image' => $this->getImageContent($node["field_image_main"][0]),
       'layout' => $this->getLayout($this->getParagraphs($node["field_content_stuff"])),
