@@ -82,12 +82,32 @@ class CuaIr21ContentApiController extends ControllerBase {
   /**
    * Builds the response.
    *
+   * @return \Symfony\Component\HttpFoundation\JsonResponse
+   *   Story data in JSON format.
+   */
+  public function stories(): JsonResponse {
+//    $node = $this->getNodeBySlug($slug);
+//    $result = [
+//      'title' => $node["title"][0]["value"],
+//      'slug' => $node["field_slug"][0]["value"],
+//      'body' => $node["body"][0]["value"],
+//      'main_image' => $this->getImageContent($node["field_image_main"][0]),
+//      'layout' => $this->getLayout($this->getParagraphs($node["field_content_stuff"])),
+//      // 'layout' => $this->getOneColumnLayout($this->getParagraphs($node["field_content_stuff"])),
+//      'related_stories' => $this->getRelatedStories($node['field_related_stories_2']),
+//    ];
+    return new JsonResponse([]);
+  }
+
+  /**
+   * Builds the response.
+   *
    * @param string $slug
    *
    * @return \Symfony\Component\HttpFoundation\JsonResponse
    *   Story data in JSON format.
    */
-  public function impacts(string $slug): JsonResponse {
+  public function story(string $slug): JsonResponse {
     $node = $this->getNodeBySlug($slug);
     $result = [
       'title' => $node["title"][0]["value"],
@@ -140,7 +160,9 @@ class CuaIr21ContentApiController extends ControllerBase {
             $content = $this->getContentList($par);
             break;
         }
-        $content['styles'] = $this->getStyles($par["field_styles"] ?? [], null);
+        $content['styles'] = $this->getStyles($par["field_styles"] ?? [], function($el) {
+          return implode(' ', $el);
+        });
 
         // Set content into proper layout sections.
         if ($layout_type === 'layout_onecol') {

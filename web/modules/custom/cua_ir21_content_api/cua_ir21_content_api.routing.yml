@@ -1,8 +1,16 @@
 cua_ir.impact_story:
-  path: '/api/impact-story/{slug}'
+  path: '/api/stories/{slug}'
+  defaults:
+    _title: 'Story'
+    _controller: '\Drupal\cua_ir21_content_api\Controller\CuaIr21ContentApiController::story'
+  requirements:
+    _permission: 'access content'
+
+cua_ir.impact_stories:
+  path: '/api/stories'
   defaults:
     _title: 'Stories'
-    _controller: '\Drupal\cua_ir21_content_api\Controller\CuaIr21ContentApiController::impacts'
+    _controller: '\Drupal\cua_ir21_content_api\Controller\CuaIr21ContentApiController::stories'
   requirements:
     _permission: 'access content'
 

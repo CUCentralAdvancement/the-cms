@@ -20,6 +20,9 @@ settings:
     -
       value: rounded
       label: rounded
+    -
+      value: related-stories
+      label: related-stories
   allowed_values_function: ''
 module: options
 locked: false
