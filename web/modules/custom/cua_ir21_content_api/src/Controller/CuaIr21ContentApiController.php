@@ -100,6 +100,7 @@ class CuaIr21ContentApiController extends ControllerBase {
         'body' => $node["body"][0]["value"],
         'main_image' => $this->getImageContent($node["field_image_main"][0]),
         'campus' => $node['field_campus'][0]['value'],
+        'description' => strip_tags($node['body'][0]['processed']),
 //        'layout' => $this->getLayout($this->getParagraphs($node["field_content_stuff"])),
         // 'layout' => $this->getOneColumnLayout($this->getParagraphs($node["field_content_stuff"])),
 //        'related_stories' => $this->getRelatedStories($node['field_related_stories_2']),
