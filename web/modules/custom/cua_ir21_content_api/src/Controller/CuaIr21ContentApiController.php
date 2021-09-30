@@ -86,17 +86,27 @@ class CuaIr21ContentApiController extends ControllerBase {
    *   Story data in JSON format.
    */
   public function stories(): JsonResponse {
-//    $node = $this->getNodeBySlug($slug);
-//    $result = [
-//      'title' => $node["title"][0]["value"],
-//      'slug' => $node["field_slug"][0]["value"],
-//      'body' => $node["body"][0]["value"],
-//      'main_image' => $this->getImageContent($node["field_image_main"][0]),
-//      'layout' => $this->getLayout($this->getParagraphs($node["field_content_stuff"])),
-//      // 'layout' => $this->getOneColumnLayout($this->getParagraphs($node["field_content_stuff"])),
-//      'related_stories' => $this->getRelatedStories($node['field_related_stories_2']),
-//    ];
-    return new JsonResponse([]);
+    $nids = $this->node_service->loadByProperties(['type' => 'impact_story']);
+    $nodes = array_map(function ($el) {
+      return json_decode($this->serializer->serialize($el, 'json',
+        ['plugin_id' => 'entity']), TRUE);
+    }, $this->node_service->loadMultiple(array_keys($nids)));
+
+    $result = [];
+    foreach ($nodes as $node) {
+      $result[] = [
+        'title' => $node["title"][0]["value"],
+        'slug' => $node["field_slug"][0]["value"],
+        'body' => $node["body"][0]["value"],
+        'main_image' => $this->getImageContent($node["field_image_main"][0]),
+        'campus' => $node['field_campus'][0]['value'],
+//        'layout' => $this->getLayout($this->getParagraphs($node["field_content_stuff"])),
+        // 'layout' => $this->getOneColumnLayout($this->getParagraphs($node["field_content_stuff"])),
+//        'related_stories' => $this->getRelatedStories($node['field_related_stories_2']),
+      ];
+    }
+
+    return new JsonResponse($result);
   }
 
   /**
