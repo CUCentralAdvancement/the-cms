@@ -10,7 +10,7 @@ field_name: field_related_stories_2
 entity_type: node
 bundle: impact_story
 label: 'Related Stories'
-description: ''
+description: 'You can link relevant stories here.'
 required: false
 translatable: false
 default_value: {  }

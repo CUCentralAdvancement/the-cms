@@ -1,0 +1,39 @@
+uuid: 772770ac-88c7-46ab-ae8a-a00953386001
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.youtube_video.field_short_text
+    - field.field.paragraph.youtube_video.field_short_text_ii
+    - field.field.paragraph.youtube_video.field_styles
+    - paragraphs.paragraphs_type.youtube_video
+id: paragraph.youtube_video.default
+targetEntityType: paragraph
+bundle: youtube_video
+mode: default
+content:
+  field_short_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_short_text_ii:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_styles:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

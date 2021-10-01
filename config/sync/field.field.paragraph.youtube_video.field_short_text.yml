@@ -1,0 +1,19 @@
+uuid: 65710129-5be3-4c81-9bca-3b2ba8fb3807
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_short_text
+    - paragraphs.paragraphs_type.youtube_video
+id: paragraph.youtube_video.field_short_text
+field_name: field_short_text
+entity_type: paragraph
+bundle: youtube_video
+label: 'Video ID'
+description: 'Take this value from the end of the YouTube video URL. For example, in the URL "https://www.youtube.com/watch?v=EuCbUREMfXg", you should take the value after "?v=" and enter "EuCbUREMfXg" for the Video ID.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -12,8 +12,8 @@ field_name: field_image_main
 entity_type: node
 bundle: impact_story
 label: 'Image Main'
-description: ''
-required: false
+description: 'This image will appear in the hero alongside the description text.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

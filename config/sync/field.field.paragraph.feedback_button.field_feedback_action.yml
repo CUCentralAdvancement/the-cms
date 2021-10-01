@@ -12,7 +12,7 @@ field_name: field_feedback_action
 entity_type: paragraph
 bundle: feedback_button
 label: 'Feedback Action'
-description: ''
+description: 'Leave this at "like" to get the feedback buttons used in designs. This field might change as the feedback button develops.'
 required: false
 translatable: false
 default_value:

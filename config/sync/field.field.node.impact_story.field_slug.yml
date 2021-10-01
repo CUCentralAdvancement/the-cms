@@ -10,12 +10,10 @@ field_name: field_slug
 entity_type: node
 bundle: impact_story
 label: Slug
-description: ''
+description: 'The slug is usually the Title field lowercased with dashes replacing the spaces. Please don''t use any special characters; use alphanumeric characters and dashes/hyphens.'
 required: true
 translatable: true
-default_value:
-  -
-    value: '[node:title]'
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: string

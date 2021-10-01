@@ -1,20 +1,20 @@
-uuid: cbe1a363-af15-46fd-bd6b-bf7f59f85d38
+uuid: 19809338-5c7d-492f-a978-ba78ad45ceec
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_styles
-    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.youtube_video
   module:
     - options
-id: paragraph.image.field_styles
+id: paragraph.youtube_video.field_styles
 field_name: field_styles
 entity_type: paragraph
-bundle: image
+bundle: youtube_video
 label: Styles
-description: 'Add "with-caption" style to show caption beneath image.'
+description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
