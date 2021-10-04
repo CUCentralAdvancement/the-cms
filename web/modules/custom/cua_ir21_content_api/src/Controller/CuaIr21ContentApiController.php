@@ -101,9 +101,9 @@ class CuaIr21ContentApiController extends ControllerBase {
         'main_image' => $this->getImageContent($node["field_image_main"][0]),
         'campus' => $node['field_campus'][0]['value'],
         'description' => strip_tags($node['body'][0]['processed']),
-//        'layout' => $this->getLayout($this->getParagraphs($node["field_content_stuff"])),
+        //        'layout' => $this->getLayout($this->getParagraphs($node["field_content_stuff"])),
         // 'layout' => $this->getOneColumnLayout($this->getParagraphs($node["field_content_stuff"])),
-//        'related_stories' => $this->getRelatedStories($node['field_related_stories_2']),
+        //        'related_stories' => $this->getRelatedStories($node['field_related_stories_2']),
       ];
     }
 
@@ -125,8 +125,8 @@ class CuaIr21ContentApiController extends ControllerBase {
       'slug' => $node["field_slug"][0]["value"],
       'body' => $node["body"][0]["value"],
       'main_image' => $this->getImageContent($node["field_image_main"][0]),
-      'layout' => $this->getLayout($this->getParagraphs($node["field_content_stuff"])),
-      // 'layout' => $this->getOneColumnLayout($this->getParagraphs($node["field_content_stuff"])),
+//      'layout' => $this->getLayout($this->getParagraphs($node["field_content_stuff"])),
+       'layout' => $this->getOneColumnLayout($this->getParagraphs($node["field_content_stuff"])),
       'related_stories' => $this->getRelatedStories($node['field_related_stories_2']),
     ];
     return new JsonResponse($result);
@@ -144,34 +144,8 @@ class CuaIr21ContentApiController extends ControllerBase {
 
       // Otherwise, get content per paragraph type.
       if ($par["behavior_settings"][0]["value"]["layout_paragraphs"]["region"] !== '') {
-        $content = [];
-        switch ($par["type"][0]["target_id"]) {
-          case 'text_block':
-            $content = $this->getTextBlockContent($par);
-            break;
-          case 'image':
-            $content = $this->getParagraphImageContent($par);
-            break;
-          case 'numeric_stat':
-            $content = $this->getNumericStatContent($par);
-            break;
-          case 'cta_block':
-            $content = $this->getCtaBlockContent($par);
-            break;
-          case 'block_quote':
-            $content = $this->getBlockQuoteContent($par);
-            break;
-          case 'social_links':
-            $content = $this->getSocialLinksContent($par);
-            break;
-          case 'feedback_button':
-            $content = $this->getFeedbackButtonContent($par);
-            break;
-          case 'content_list':
-            $content = $this->getContentList($par);
-            break;
-        }
-        $content['styles'] = $this->getStyles($par["field_styles"] ?? [], function($el) {
+        $content = $this->getParagraphContent($par);
+        $content['styles'] = $this->getStyles($par["field_styles"] ?? [], function ($el) {
           return implode(' ', $el);
         });
 
@@ -185,6 +159,50 @@ class CuaIr21ContentApiController extends ControllerBase {
       }
     }
     return $layout;
+  }
+
+  private function getOneColumnLayout(array $paragraphs): array {
+    $layout = [];
+    foreach ($paragraphs as $par) {
+      $content = $this->getParagraphContent($par);
+      $content['styles'] = $this->getStyles($par["field_styles"], NULL);
+      $layout[] = $content;
+    }
+    return $layout;
+  }
+
+  private function getParagraphContent(array $par): array {
+    $content = [];
+    switch ($par["type"][0]["target_id"]) {
+      case 'text_block':
+        $content = $this->getTextBlockContent($par);
+        break;
+      case 'image':
+        $content = $this->getParagraphImageContent($par);
+        break;
+      case 'numeric_stat':
+        $content = $this->getNumericStatContent($par);
+        break;
+      case 'cta_block':
+        $content = $this->getCtaBlockContent($par);
+        break;
+      case 'block_quote':
+        $content = $this->getBlockQuoteContent($par);
+        break;
+      case 'social_links':
+        $content = $this->getSocialLinksContent($par);
+        break;
+      case 'feedback_button':
+        $content = $this->getFeedbackButtonContent($par);
+        break;
+      case 'content_list':
+        $content = $this->getContentList($par);
+        break;
+      case 'youtube_video':
+        $content = $this->getYouTubeContent($par);
+        break;
+    }
+    return $content;
   }
 
   private function getContentList(array $paragraph): array {
@@ -217,7 +235,9 @@ class CuaIr21ContentApiController extends ControllerBase {
 
   private function getSocialLinksContent(array $paragraph): array {
     return [
-      'services' => array_map(function ($el) {return $el['value'];}, $paragraph['field_services']),
+      'services' => array_map(function ($el) {
+        return $el['value'];
+      }, $paragraph['field_services']),
       'id' => $this->getUidFromString(),
       'type' => 'social_links',
     ];
@@ -281,12 +301,21 @@ class CuaIr21ContentApiController extends ControllerBase {
     ];
   }
 
+  private function getYouTubeContent(array $paragraph) {
+    return [
+      'video_id' => $paragraph['field_short_text'][0]["value"],
+      'title' => $paragraph['field_short_text_ii'][0]["value"],
+      'id' => $this->getUidFromString($paragraph['field_short_text'][0]["value"] . $paragraph['field_short_text_ii'][0]["value"]),
+      'type' => 'youtube_video',
+    ];
+  }
+
   private function setSections(int &$section_number, string &$layout_type, array &$layout, array $par) {
     $section_number++;
     $widths = $par["behavior_settings"][0]["value"]["layout_paragraphs"]["config"]["column_widths"] ?? '100';
-    $styles = $this->getStyles($par["field_layout_styles"], function($el) {
-      return implode(' ', $el);
-    }) ?? '';
+    $styles = $this->getStyles($par["field_layout_styles"], function ($el) {
+        return implode(' ', $el);
+      }) ?? '';
 
     switch ($par["behavior_settings"][0]["value"]["layout_paragraphs"]["layout"]) {
       case 'layout_onecol':
@@ -349,10 +378,10 @@ class CuaIr21ContentApiController extends ControllerBase {
   }
 
   private function getStyles(array $field_styles, $formatter) {
-    $the_styles =  array_map(function ($style) {
+    $the_styles = array_map(function ($style) {
       return $style['value'];
     }, $field_styles);
-    return $formatter !== null ? call_user_func($formatter, $the_styles) : $the_styles;
+    return $formatter !== NULL ? call_user_func($formatter, $the_styles) : $the_styles;
   }
 
   private function getNodeBySlug($slug): array {
@@ -377,27 +406,10 @@ class CuaIr21ContentApiController extends ControllerBase {
   private function getUidFromString(string $string = ''): string {
     if ($string !== '') {
       return substr(base64_encode($string), 0, 20);
-    } else {
+    }
+    else {
       return (string) rand(1, 1000);
     }
-  }
-
-  private function getOneColumnLayout(array $paragraphs): array {
-    $layout = [];
-    foreach ($paragraphs as $par) {
-      $content = [];
-      switch ($par["type"][0]["target_id"]) {
-        case 'text_block':
-          $content = $this->getTextBlockContent($par["field_content"]);
-          break;
-        case 'image':
-          $content = $this->getParagraphImageContent($par["field_image"]);
-          break;
-      }
-      $content['styles'] = $this->getStyles($par["field_styles"], null);
-      $layout[] = $content;
-    }
-    return $layout;
   }
 
   private function getRelatedStories($related_stories) {

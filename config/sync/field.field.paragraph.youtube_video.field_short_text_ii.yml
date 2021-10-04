@@ -1,0 +1,19 @@
+uuid: 0934aab3-07c2-46c0-b99a-bc18f8437db0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_short_text_ii
+    - paragraphs.paragraphs_type.youtube_video
+id: paragraph.youtube_video.field_short_text_ii
+field_name: field_short_text_ii
+entity_type: paragraph
+bundle: youtube_video
+label: 'Video Title'
+description: 'To assist screen readers, please enter a descriptive title for the video. This does not have to be the same title as displayed on the YouTube website.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
