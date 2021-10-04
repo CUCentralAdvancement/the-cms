@@ -10,14 +10,17 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteObjectInterface;
 use Drupal\file\Entity\File;
 
 /**
  * Implements hook_form_alter().
  */
 function cua_cloudinary_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  if (in_array($form_id, ['node_impact_story_edit_form',
-    'node_impact_story_form'])) {
+  if (in_array($form_id, [
+    'node_impact_story_edit_form',
+    'node_impact_story_form',
+  ])) {
     $form["field_image_main"]["widget"][0]["#upload_validators"]['cua_cloudinary_validate_name'] = [];
 
     // Add library to replace thumbnail image with regular from Cloudinary.
@@ -26,6 +29,16 @@ function cua_cloudinary_form_alter(&$form, FormStateInterface $form_state, $form
 
   if ($form_id === 'editor_image_dialog') {
     $form["fid"]["#upload_validators"]['cua_cloudinary_validate_name'] = [];
+  }
+
+  if (in_array($form_id, ['user_login_form', 'user_register_form', 'user_pass'], TRUE)) {
+    $request = \Drupal::request();
+    if ($route = $request->attributes->get(RouteObjectInterface::ROUTE_OBJECT)) {
+      $route->setDefault('_title', 'CU Advancement CMS');
+    }
+
+    $form['#prefix'] = '<div class="logo-wrapper"><img src="https://giving.cu.edu/sites/all/themes/themekit/images/logo.svg" alt="CU Logo"/></div>';
+    $form['#attached']['library'][] = 'cua_cloudinary/user_login';
   }
 }
 

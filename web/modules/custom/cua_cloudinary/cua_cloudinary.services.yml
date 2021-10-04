@@ -3,3 +3,7 @@ services:
     class: Drupal\cua_cloudinary\StreamWrapper\CloudyStreamWrapper
     tags:
       - { name: stream_wrapper, scheme: cloudinary }
+  cua_cloudinary.route_subscriber:
+    class: Drupal\cua_cloudinary\EventSubscriber\CuaCloudinaryRouteSubscriber
+    tags:
+      - { name: event_subscriber }
