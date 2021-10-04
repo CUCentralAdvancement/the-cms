@@ -12,3 +12,7 @@ cua_cl_lp_images:
   dependencies:
     - core/jquery
     - core/drupalSettings
+user_login:
+  css:
+    theme:
+      css/user-login.css: {}

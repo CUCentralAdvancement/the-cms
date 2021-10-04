@@ -1,0 +1,14 @@
+.region.region-content {
+  margin: 1em auto 0 auto;
+  max-width: 450px;
+  padding: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px rgba(204,204,204,0.7);
+}
+
+.logo-wrapper {
+  width: 350px;
+  margin: 0 auto;
+  padding: 2.5em;
+}
