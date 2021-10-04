@@ -14,7 +14,7 @@ dependencies:
     - node.type.impact_story
   module:
     - image
-    - paragraphs
+    - layout_paragraphs
     - path
     - text
 id: node.impact_story.default
@@ -45,15 +45,12 @@ content:
     type: options_select
     region: content
   field_content_stuff:
-    type: entity_reference_paragraphs
+    type: layout_paragraphs
     weight: 11
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
+      preview_view_mode: default
+      nesting_depth: 0
+      require_layouts: 0
     third_party_settings: {  }
     region: content
   field_image_main:
