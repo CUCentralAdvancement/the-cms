@@ -10,7 +10,7 @@ field_name: field_slug
 entity_type: node
 bundle: impact_story
 label: Slug
-description: 'The slug is usually the Title field lowercased with dashes replacing the spaces. Please don''t use any special characters; use alphanumeric characters and dashes/hyphens.'
+description: 'Help for content editors can be <a href="https://github.com/CUCentralAdvancement/essential-cu/blob/main/docs/help/ir21_content_editor.md" target="_blank">found on the project wiki.</a>'
 required: true
 translatable: true
 default_value: {  }
