@@ -4,11 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.impact_story.body
-    - field.field.node.impact_story.field_campus
     - field.field.node.impact_story.field_content_stuff
     - field.field.node.impact_story.field_image_main
     - field.field.node.impact_story.field_related_stories_2
     - field.field.node.impact_story.field_slug
+    - field.field.node.impact_story.field_the_campus
     - field.field.node.impact_story.layout_builder__layout
     - node.type.impact_story
   module:
@@ -120,21 +120,21 @@ third_party_settings:
                 type: entity_reference_label
             additional: {  }
             weight: 5
-          a46b4909-0135-4375-84b2-901483478ec5:
-            uuid: a46b4909-0135-4375-84b2-901483478ec5
+          d320ae4f-e05f-4082-b44f-47bdc7061c46:
+            uuid: d320ae4f-e05f-4082-b44f-47bdc7061c46
             region: content
             configuration:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:impact_story:field_campus'
+              id: 'field_block:node:impact_story:field_the_campus'
               formatter:
                 label: above
                 settings: {  }
                 third_party_settings: {  }
                 type: list_default
             additional: {  }
-            weight: 6
+            weight: 7
         third_party_settings: {  }
 id: node.impact_story.default
 targetEntityType: node
@@ -147,13 +147,6 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_campus:
-    weight: 106
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
     region: content
   field_content_stuff:
     type: entity_reference_revisions_entity_view
@@ -188,6 +181,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_the_campus:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   links:
     weight: 100
