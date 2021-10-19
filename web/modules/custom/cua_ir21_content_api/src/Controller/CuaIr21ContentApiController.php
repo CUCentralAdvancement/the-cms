@@ -207,13 +207,10 @@ class CuaIr21ContentApiController extends ControllerBase {
 
   private function getContentList(array $paragraph): array {
     $content = [];
-    foreach ($paragraph['field_listing_item'] as $index => $item) {
-      $data = $this->node_service->load($item['target_id']);
-      $node = json_decode($this->serializer->serialize($data, 'json',
-        ['plugin_id' => 'entity']), TRUE);
+    foreach ($paragraph['field_link'] as $index => $item) {
       $content[] = [
-        'title' => $node['title'][0]['value'],
-        'path' => $item['url'],
+        'title' => $item['title'],
+        'path' => $item['uri'],
       ];
     }
 
@@ -265,9 +262,12 @@ class CuaIr21ContentApiController extends ControllerBase {
   }
 
   private function getTextBlockContent(array $paragraph): array {
+    // Replace extra stuff still included.
+    $content = $paragraph['field_content'][0]["processed"];
+    $content = str_replace("\n", "", $content);
     return [
-      'content' => $paragraph['field_content'][0]["value"],
-      'id' => $this->getUidFromString($paragraph['field_content'][0]["value"]),
+      'content' => $content,
+      'id' => $this->getUidFromString($paragraph['field_content'][0]["processed"]),
       'type' => 'text_block',
     ];
   }

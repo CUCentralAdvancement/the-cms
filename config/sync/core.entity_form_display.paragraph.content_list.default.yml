@@ -3,24 +3,24 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.content_list.field_listing_item
+    - field.field.paragraph.content_list.field_link
     - field.field.paragraph.content_list.field_short_text
     - field.field.paragraph.content_list.field_styles
     - paragraphs.paragraphs_type.content_list
+  module:
+    - link
 id: paragraph.content_list.default
 targetEntityType: paragraph
 bundle: content_list
 mode: default
 content:
-  field_listing_item:
-    weight: 0
+  field_link:
+    weight: 3
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: link_default
     region: content
   field_short_text:
     weight: 2
