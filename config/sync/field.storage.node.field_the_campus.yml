@@ -1,0 +1,33 @@
+uuid: 869a0fb6-636e-4166-a176-bdffe58b6411
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_the_campus
+field_name: field_the_campus
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'CU Anschutz'
+      label: 'CU Anschutz'
+    -
+      value: 'CU Boulder'
+      label: 'CU Boulder'
+    -
+      value: 'CU Denver'
+      label: 'CU Denver'
+    -
+      value: UCCS
+      label: UCCS
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

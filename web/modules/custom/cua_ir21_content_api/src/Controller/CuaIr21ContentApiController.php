@@ -99,7 +99,7 @@ class CuaIr21ContentApiController extends ControllerBase {
         'slug' => $node["field_slug"][0]["value"],
         'body' => $node["body"][0]["value"],
         'main_image' => $this->getImageContent($node["field_image_main"][0]),
-        'campus' => $node['field_campus'][0]['value'],
+        'campus' => $node['field_the_campus'][0]['value'],
         'description' => strip_tags($node['body'][0]['processed']),
         //        'layout' => $this->getLayout($this->getParagraphs($node["field_content_stuff"])),
         // 'layout' => $this->getOneColumnLayout($this->getParagraphs($node["field_content_stuff"])),
@@ -419,7 +419,7 @@ class CuaIr21ContentApiController extends ControllerBase {
 
     return array_map(function ($el) {
       return [
-        'campus' => $el['field_campus'][0]['value'],
+        'campus' => $el['field_the_campus'][0]['value'],
         'title' => $el['title'][0]['value'],
         'description' => strip_tags($el['body'][0]['processed']),
         'main_image' => $this->getImageContent($el['field_image_main'][0]),
