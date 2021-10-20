@@ -9,8 +9,8 @@ dependencies:
     - paragraphs.paragraphs_type.content_list
     - paragraphs.paragraphs_type.cta_block
     - paragraphs.paragraphs_type.feedback_button
+    - paragraphs.paragraphs_type.financials_snippet
     - paragraphs.paragraphs_type.image
-    - paragraphs.paragraphs_type.numeric_stat
     - paragraphs.paragraphs_type.social_links
     - paragraphs.paragraphs_type.text_block
     - paragraphs.paragraphs_type.youtube_video
@@ -34,10 +34,10 @@ settings:
       image: image
       content_list: content_list
       text_block: text_block
-      numeric_stat: numeric_stat
       block_quote: block_quote
       cta_block: cta_block
       feedback_button: feedback_button
+      financials_snippet: financials_snippet
       social_links: social_links
       youtube_video: youtube_video
     target_bundles_drag_drop:
@@ -53,15 +53,15 @@ settings:
       feedback_button:
         enabled: true
         weight: 13
+      financials_snippet:
+        enabled: true
+        weight: 15
       image:
         enabled: true
         weight: 3
       layout:
         weight: 4
         enabled: false
-      numeric_stat:
-        enabled: true
-        weight: 7
       social_links:
         enabled: true
         weight: 15

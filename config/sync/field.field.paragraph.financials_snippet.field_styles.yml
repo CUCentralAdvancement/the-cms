@@ -1,16 +1,16 @@
-uuid: f87866da-ea27-40a5-b24a-1b40bdd519c8
+uuid: 75163d9a-f3a0-4bee-ad78-56fb019e5a06
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_styles
-    - paragraphs.paragraphs_type.numeric_stat
+    - paragraphs.paragraphs_type.financials_snippet
   module:
     - options
-id: paragraph.numeric_stat.field_styles
+id: paragraph.financials_snippet.field_styles
 field_name: field_styles
 entity_type: paragraph
-bundle: numeric_stat
+bundle: financials_snippet
 label: Styles
 description: ''
 required: false

@@ -1,0 +1,62 @@
+uuid: 7994ac2d-183b-4143-8220-7ffc630d6049
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.financials_snippet.field_content
+    - field.field.paragraph.financials_snippet.field_image
+    - field.field.paragraph.financials_snippet.field_short_text
+    - field.field.paragraph.financials_snippet.field_single_link
+    - field.field.paragraph.financials_snippet.field_styles
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.financials_snippet
+  module:
+    - image
+    - link
+    - text
+id: paragraph.financials_snippet.default
+targetEntityType: paragraph
+bundle: financials_snippet
+mode: default
+content:
+  field_content:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_short_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_single_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_styles:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

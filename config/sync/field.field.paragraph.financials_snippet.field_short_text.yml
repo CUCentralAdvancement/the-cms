@@ -1,18 +1,18 @@
-uuid: 08424ca1-ec41-4cc9-8f6f-1afa75385d8d
+uuid: 0032faa9-5fbe-4c42-99e0-d6d3bd1f9e3a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_short_text
-    - paragraphs.paragraphs_type.numeric_stat
-id: paragraph.numeric_stat.field_short_text
+    - paragraphs.paragraphs_type.financials_snippet
+id: paragraph.financials_snippet.field_short_text
 field_name: field_short_text
 entity_type: paragraph
-bundle: numeric_stat
-label: Label
+bundle: financials_snippet
+label: Title
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

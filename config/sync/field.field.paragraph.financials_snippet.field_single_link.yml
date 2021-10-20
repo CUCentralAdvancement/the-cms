@@ -1,0 +1,23 @@
+uuid: 6363b1f2-784c-4b98-9b0a-3d517c717446
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_single_link
+    - paragraphs.paragraphs_type.financials_snippet
+  module:
+    - link
+id: paragraph.financials_snippet.field_single_link
+field_name: field_single_link
+entity_type: paragraph
+bundle: financials_snippet
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

@@ -1,9 +1,9 @@
-uuid: 87752b61-1901-4e5c-a820-faf7a6dd3823
+uuid: d02e6fb1-f5c3-433d-a232-07760ea0542e
 langcode: en
 status: true
 dependencies: {  }
-id: numeric_stat
-label: 'Numeric Stat'
+id: financials_snippet
+label: 'Financials Snippet'
 icon_uuid: null
 icon_default: null
 description: ''

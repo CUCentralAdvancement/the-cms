@@ -1,0 +1,21 @@
+uuid: 86734922-4cf6-42d1-a8c5-2ca757bf222f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.financials_snippet
+  module:
+    - text
+id: paragraph.financials_snippet.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: financials_snippet
+label: Text
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

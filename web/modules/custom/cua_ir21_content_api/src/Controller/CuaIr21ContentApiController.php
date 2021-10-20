@@ -101,9 +101,6 @@ class CuaIr21ContentApiController extends ControllerBase {
         'main_image' => $this->getImageContent($node["field_image_main"][0]),
         'campus' => $node['field_the_campus'][0]['value'],
         'description' => strip_tags($node['body'][0]['processed']),
-        //        'layout' => $this->getLayout($this->getParagraphs($node["field_content_stuff"])),
-        // 'layout' => $this->getOneColumnLayout($this->getParagraphs($node["field_content_stuff"])),
-        //        'related_stories' => $this->getRelatedStories($node['field_related_stories_2']),
       ];
     }
 
@@ -200,6 +197,9 @@ class CuaIr21ContentApiController extends ControllerBase {
         break;
       case 'youtube_video':
         $content = $this->getYouTubeContent($par);
+        break;
+      case 'financials_snippet':
+        $content = $this->getFinancialsSnippet($par);
         break;
     }
     return $content;
@@ -307,6 +307,21 @@ class CuaIr21ContentApiController extends ControllerBase {
       'title' => $paragraph['field_short_text_ii'][0]["value"],
       'id' => $this->getUidFromString($paragraph['field_short_text'][0]["value"] . $paragraph['field_short_text_ii'][0]["value"]),
       'type' => 'youtube_video',
+    ];
+  }
+
+  private function getFinancialsSnippet(array $paragraph) {
+    $foo = 'bar';
+    return [
+      'image' => $this->getImageContent($paragraph['field_image'][0]),
+      'title' => $paragraph['field_short_text'][0]["value"],
+      'id' => $this->getUidFromString($paragraph['field_short_text'][0]["value"]),
+      'text' => $paragraph["field_content"][0]["processed"],
+      'link' => [
+        'title' => $paragraph["field_single_link"][0]["title"],
+        'path' => $paragraph["field_single_link"][0]["uri"],
+      ],
+      'type' => 'financials_snippet',
     ];
   }
 

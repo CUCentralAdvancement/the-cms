@@ -1,17 +1,16 @@
-uuid: 3097c9a2-4309-456f-babb-71aa13a72bf1
+uuid: 2fc135d3-dc42-407d-84c3-39d1c0a6792c
 langcode: en
 status: true
 dependencies:
   module:
+    - link
     - paragraphs
-id: paragraph.field_number
-field_name: field_number
+id: paragraph.field_single_link
+field_name: field_single_link
 entity_type: paragraph
-type: integer
-settings:
-  unsigned: false
-  size: normal
-module: core
+type: link
+settings: {  }
+module: link
 locked: false
 cardinality: 1
 translatable: true
