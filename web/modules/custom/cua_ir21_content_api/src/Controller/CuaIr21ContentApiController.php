@@ -92,6 +92,9 @@ class CuaIr21ContentApiController extends ControllerBase {
         ['plugin_id' => 'entity']), TRUE);
     }, $this->node_service->loadMultiple(array_keys($nids)));
 
+    // Randomize order.
+    shuffle($nodes);
+
     $result = [];
     foreach ($nodes as $node) {
       $result[] = [
